@@ -258,20 +258,18 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
 }).addTo(map);
 
 // ── SVG icon paths ─────────────────────────────────────────────────────────
-// Wind turbine: tower + 3 blades
+// Wind turbine: tapered tower + 3 blades at 120° intervals + hub
 const SVG_WIND = (c, op) => `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,0.35))">
   <circle cx="19" cy="19" r="18" fill="white" opacity="${op}" stroke="${c}" stroke-width="2"/>
-  <!-- tower -->
-  <line x1="19" y1="21" x2="19" y2="32" stroke="${c}" stroke-width="2.2" stroke-linecap="round" opacity="${op}"/>
-  <!-- hub -->
-  <circle cx="19" cy="19" r="2.4" fill="${c}" opacity="${op}"/>
-  <!-- blade up -->
-  <path d="M19 16.5 C17.5 13 17 9 19 7 C21 9 20.5 13 19 16.5Z" fill="${c}" opacity="${op}"/>
-  <!-- blade lower-right -->
-  <path d="M21 20.5 C24.5 20.5 28 19.5 29 17.5 C27 16.5 23.5 17.5 21 20.5Z" fill="${c}" opacity="${op}"/>
-  <!-- blade lower-left -->
-  <path d="M17 20.5 C13.5 20.5 10 19.5 9 17.5 C11 16.5 14.5 17.5 17 20.5Z" fill="${c}" opacity="${op}"/>
+  <!-- tapered tower -->
+  <polygon points="18.2,18 19.8,18 21,33 17,33" fill="${c}" opacity="${op}"/>
+  <!-- 3 blades at 120° each — same teardrop shape, rotated around hub (19,18) -->
+  <path d="M19,18 C17.8,15 17.5,11 19,8 C20.5,11 20.2,15 19,18Z" fill="${c}" opacity="${op}"/>
+  <path d="M19,18 C17.8,15 17.5,11 19,8 C20.5,11 20.2,15 19,18Z" fill="${c}" opacity="${op}" transform="rotate(120,19,18)"/>
+  <path d="M19,18 C17.8,15 17.5,11 19,8 C20.5,11 20.2,15 19,18Z" fill="${c}" opacity="${op}" transform="rotate(240,19,18)"/>
+  <!-- hub: white fill covers blade roots and tower top cleanly -->
+  <circle cx="19" cy="18" r="2.5" fill="white" opacity="${op}" stroke="${c}" stroke-width="1.8"/>
 </svg>`;
 
 // Solar panel array: sun above stylised panels
