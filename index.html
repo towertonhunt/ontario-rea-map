@@ -167,7 +167,7 @@
     }
     #legend h4 { font-size: 0.75rem; margin-bottom: 7px; color: #444; }
     .legend-row { display: flex; align-items: center; gap: 7px; margin-bottom: 4px; }
-    .legend-dot { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid rgba(0,0,0,0.3); flex-shrink: 0; }
+    .legend-icon { font-size: 1rem; line-height: 1; flex-shrink: 0; }
 
     /* Responsive */
     @media (max-width: 700px) {
@@ -236,13 +236,12 @@
 <!-- Legend (inside map div so it floats over) -->
 <div id="legend">
   <h4>Project Type</h4>
-  <div class="legend-row"><div class="legend-dot" style="background:#3b82f6"></div> Wind</div>
-  <div class="legend-row"><div class="legend-dot" style="background:#f59e0b"></div> Solar</div>
-  <div class="legend-row"><div class="legend-dot" style="background:#22c55e"></div> Biogas</div>
-  <div class="legend-row" style="margin-top:6px;border-top:1px solid #eee;padding-top:6px">
-    <div class="legend-dot" style="background:#6366f1"></div> Full tech docs
-  </div>
-  <div class="legend-row"><div class="legend-dot" style="background:#94a3b8"></div> Approval only</div>
+  <div class="legend-row"><span class="legend-icon">🌬️</span> Wind (full docs)</div>
+  <div class="legend-row"><span class="legend-icon" style="opacity:0.45">🌬️</span> Wind (approval only)</div>
+  <div class="legend-row"><span class="legend-icon">☀️</span> Solar (full docs)</div>
+  <div class="legend-row"><span class="legend-icon" style="opacity:0.45">☀️</span> Solar (approval only)</div>
+  <div class="legend-row"><span class="legend-icon">🔥</span> Biogas (full docs)</div>
+  <div class="legend-row"><span class="legend-icon" style="opacity:0.45">🔥</span> Biogas (approval only)</div>
 </div>
 
 <script>
@@ -258,35 +257,97 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
   maxZoom: 19,
 }).addTo(map);
 
-// ── Marker colours ─────────────────────────────────────────────────────────
-const COLOURS = {
-  wind_tech:    "#3b82f6",  // blue  — wind, has tech docs
-  wind_appr:    "#93c5fd",  // light blue — wind, approval only
-  solar_tech:   "#f59e0b",  // amber — solar, has tech docs
-  solar_appr:   "#fcd34d",  // light amber
-  biogas_tech:  "#22c55e",  // green
-  biogas_appr:  "#86efac",
-};
+// ── SVG icon paths ─────────────────────────────────────────────────────────
+// Wind turbine: tower + 3 blades
+const SVG_WIND = (c, op) => `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,0.35))">
+  <circle cx="19" cy="19" r="18" fill="white" opacity="${op}" stroke="${c}" stroke-width="2"/>
+  <!-- tower -->
+  <line x1="19" y1="21" x2="19" y2="32" stroke="${c}" stroke-width="2.2" stroke-linecap="round" opacity="${op}"/>
+  <!-- hub -->
+  <circle cx="19" cy="19" r="2.4" fill="${c}" opacity="${op}"/>
+  <!-- blade up -->
+  <path d="M19 16.5 C17.5 13 17 9 19 7 C21 9 20.5 13 19 16.5Z" fill="${c}" opacity="${op}"/>
+  <!-- blade lower-right -->
+  <path d="M21 20.5 C24.5 20.5 28 19.5 29 17.5 C27 16.5 23.5 17.5 21 20.5Z" fill="${c}" opacity="${op}"/>
+  <!-- blade lower-left -->
+  <path d="M17 20.5 C13.5 20.5 10 19.5 9 17.5 C11 16.5 14.5 17.5 17 20.5Z" fill="${c}" opacity="${op}"/>
+</svg>`;
 
-function markerColour(f) {
-  const t = f.properties.type || "other";
-  const has = f.properties.has_tech_docs;
-  if (t === "wind")   return has ? COLOURS.wind_tech   : COLOURS.wind_appr;
-  if (t === "solar")  return has ? COLOURS.solar_tech  : COLOURS.solar_appr;
-  if (t === "biogas") return has ? COLOURS.biogas_tech : COLOURS.biogas_appr;
-  return "#94a3b8";
-}
+// Solar panel array: sun above stylised panels
+const SVG_SOLAR = (c, op) => `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,0.35))">
+  <circle cx="19" cy="19" r="18" fill="white" opacity="${op}" stroke="${c}" stroke-width="2"/>
+  <!-- sun circle -->
+  <circle cx="19" cy="13" r="4.5" fill="${c}" opacity="${op}"/>
+  <!-- sun rays -->
+  <g stroke="${c}" stroke-width="1.8" stroke-linecap="round" opacity="${op}">
+    <line x1="19" y1="6"  x2="19" y2="4.5"/>
+    <line x1="19" y1="20" x2="19" y2="21.5"/>
+    <line x1="12" y1="13" x2="10.5" y2="13"/>
+    <line x1="26" y1="13" x2="27.5" y2="13"/>
+    <line x1="14" y1="8"  x2="13"   y2="7"/>
+    <line x1="24" y1="8"  x2="25"   y2="7"/>
+    <line x1="14" y1="18" x2="13"   y2="19"/>
+    <line x1="24" y1="18" x2="25"   y2="19"/>
+  </g>
+  <!-- solar panel grid -->
+  <g opacity="${op}">
+    <rect x="9"  y="24" width="8"  height="6" rx="1" fill="${c}"/>
+    <rect x="18.5" y="24" width="4" height="6" rx="1" fill="${c}"/>
+    <rect x="24" y="24" width="5"  height="6" rx="1" fill="${c}"/>
+    <line x1="11" y1="24" x2="11" y2="30" stroke="white" stroke-width="0.8"/>
+    <line x1="13" y1="24" x2="13" y2="30" stroke="white" stroke-width="0.8"/>
+    <line x1="15" y1="24" x2="15" y2="30" stroke="white" stroke-width="0.8"/>
+    <line x1="9"  y1="27" x2="17" y2="27" stroke="white" stroke-width="0.8"/>
+  </g>
+</svg>`;
 
-function makeIcon(colour) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-    <circle cx="8" cy="8" r="7" fill="${colour}" stroke="white" stroke-width="2"/>
+// Biogas: flame inside droplet shape
+const SVG_BIOGAS = (c, op) => `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,0.35))">
+  <circle cx="19" cy="19" r="18" fill="white" opacity="${op}" stroke="${c}" stroke-width="2"/>
+  <!-- flame -->
+  <path d="M19 8
+    C15 12 11 15 13 21
+    C14 24 16 25 15 27
+    C13 25 13 21 15 19
+    C12 21 10 25 13 28
+    C15 31 17 32 19 32
+    C21 32 23 31 25 28
+    C28 25 26 21 23 19
+    C25 21 25 25 23 27
+    C22 25 24 24 25 21
+    C27 15 23 12 19 8Z"
+    fill="${c}" opacity="${op}"/>
+  <!-- inner highlight -->
+  <path d="M19 14 C17 17 16 19 17 22 C18 24 19 24 19 14Z"
+    fill="white" opacity="${op * 0.35}"/>
+</svg>`;
+
+function makeIcon(feature, selected) {
+  const t   = (feature.properties.type || "other");
+  const has = feature.properties.has_tech_docs;
+  const op  = has ? 1 : 0.42;   // muted for approval-only
+
+  const COLOURS = { wind: "#2563eb", solar: "#d97706", biogas: "#16a34a", other: "#6b7280" };
+  const c = selected ? "#7c3aed" : (COLOURS[t] || COLOURS.other);
+
+  let svgStr;
+  if (t === "wind")        svgStr = SVG_WIND(c, op);
+  else if (t === "solar")  svgStr = SVG_SOLAR(c, op);
+  else if (t === "biogas") svgStr = SVG_BIOGAS(c, op);
+  else svgStr = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" width="38" height="38">
+    <circle cx="19" cy="19" r="18" fill="white" opacity="${op}" stroke="${c}" stroke-width="2"/>
+    <circle cx="19" cy="19" r="8" fill="${c}" opacity="${op}"/>
   </svg>`;
+
   return L.divIcon({
-    html: svg,
+    html: svgStr,
     className: "",
-    iconSize: [16, 16],
-    iconAnchor: [8, 8],
-    popupAnchor: [0, -10],
+    iconSize: [38, 38],
+    iconAnchor: [19, 19],
+    popupAnchor: [0, -20],
   });
 }
 
@@ -316,7 +377,7 @@ const docList      = document.getElementById("doc-list");
 
 document.getElementById("sidebar-close").addEventListener("click", () => {
   sidebar.classList.add("hidden");
-  if (activeMarker) { activeMarker.setIcon(makeIcon(markerColour(activeMarker.feature))); activeMarker = null; }
+  if (activeMarker) { activeMarker.setIcon(makeIcon(activeMarker.feature, false)); activeMarker = null; }
 });
 
 let activeMarker = null;
@@ -326,10 +387,10 @@ function openSidebar(feature, marker) {
 
   // Reset previous active marker
   if (activeMarker && activeMarker !== marker) {
-    activeMarker.setIcon(makeIcon(markerColour(activeMarker.feature)));
+    activeMarker.setIcon(makeIcon(activeMarker.feature, false));
   }
   activeMarker = marker;
-  marker.setIcon(makeIcon("#7c3aed"));  // purple = selected
+  marker.setIcon(makeIcon(feature, true));  // purple = selected
 
   sidebarTitle.textContent = p.name;
   sidebar.classList.remove("hidden");
@@ -434,7 +495,7 @@ function applyFilters() {
 
   filtered.forEach(feature => {
     const [lng, lat] = feature.geometry.coordinates;
-    const marker = L.marker([lat, lng], { icon: makeIcon(markerColour(feature)) });
+    const marker = L.marker([lat, lng], { icon: makeIcon(feature, false) });
     marker.feature = feature;
     marker.on("click", () => openSidebar(feature, marker));
     allMarkers.push(marker);
