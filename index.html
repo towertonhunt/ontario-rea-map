@@ -487,6 +487,7 @@ function openSidebar(feature, marker) {
       ${rows.map(([k, v]) => `<div class="meta-item"><label>${k}</label><span>${v}</span></div>`).join("")}
     </div>
     ${p.registry_url ? `<div style="margin-top:10px"><a href="${p.registry_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">${p.archived ? "Open archived registry record" : "Open registry page"} ↗</a></div>` : ""}
+    ${p.bape_url ? `<div style="margin-top:4px"><a href="${p.bape_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">BAPE dossier (documents, hearings) ↗</a></div>` : ""}
     ${p.proponent_url ? `<div style="margin-top:4px"><a href="${p.proponent_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">Proponent's project page ↗</a></div>` : ""}
     ${p.archived ? `<p style="margin-top:8px;font-size:0.72rem;color:#666">Archived record — assessed under CEAA 1992 and no longer served by the live registry; links point at the Agency's archive.</p>` : ""}
     ${p.geocode === "approximate" ? `<p style="margin-top:8px;font-size:0.72rem;color:#a16207">⚠ Approximate location — pinned to the nearest named place (${(p.geocode_match || "").replace("name:", "")}). The registry does not publish coordinates for this project.</p>` : ""}
@@ -514,7 +515,8 @@ function openSidebar(feature, marker) {
             a.rel = "noopener";
             const title = doc.title && doc.title.length > 80
               ? doc.title.substring(0, 78) + "…" : (doc.title || "Document");
-            a.textContent = doc.date ? `${title} (${doc.date})` : title;
+            const label = doc.code ? `${doc.code} · ${title}` : title;
+            a.textContent = doc.date ? `${label} (${doc.date})` : label;
             sec.appendChild(a);
             if (doc.archive_url) {
               const b = document.createElement("a");

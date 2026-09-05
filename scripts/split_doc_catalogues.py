@@ -171,6 +171,7 @@ def disambiguate_titles(docs):
                 continue
             title = same_date[0]['title'].strip()
             candidates = (
+                [d.get('code') for d in same_date],
                 [_stem(d.get('url') or '') for d in same_date],
                 [_captured(d) for d in same_date],
                 [d.get('category') for d in same_date],
@@ -287,6 +288,46 @@ if os.path.exists(src):
                   open(os.path.join(outdir, f'{pid}.json'), 'w'), ensure_ascii=False)
         n += len(uniq)
     print(f'federal archive: {len(by_project)} files, {n} docs')
+
+
+# ── Quebec BAPE ──────────────────────────────────────────────────────
+# scripts/fetch_qc_docs.py harvests every dossier's documentation pages
+# with each document's cote (RP1, DA3 ...) and date. File and project
+# names keep the July 2026 rule (slug cut to 60 characters) so the R2
+# archive keys derived from them stay put.
+src = os.path.join(RAW, 'qc_bape_doc_catalogue.json')
+if os.path.exists(src):
+    outdir = os.path.join(ROOT, 'data', 'docs', 'qc')
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for slug, entry in json.load(open(src)).items():
+        docs = entry['docs'] if isinstance(entry, dict) else entry
+        if not docs:
+            continue
+        name = slug[:60]
+        # keep whatever project label the catalogue already carries: the R2
+        # archive keys were derived from it (July cut it at 64, files at 60)
+        existing = os.path.join(outdir, f'{name}.json')
+        project = name
+        if os.path.exists(existing):
+            try:
+                project = json.load(open(existing)).get('project') or name
+            except (ValueError, OSError):
+                pass
+        out = []
+        for d in docs:
+            rec = {'title': d.get('title') or 'Document', 'url': d['url']}
+            if d.get('code'):
+                rec['code'] = d['code']
+            if d.get('date'):
+                rec['date'] = d['date']
+            out.append(rec)
+        json.dump({'project': project,
+                   'name': entry.get('title') if isinstance(entry, dict) else None,
+                   'docs': out},
+                  open(os.path.join(outdir, f'{name}.json'), 'w'), ensure_ascii=False)
+        n += len(out)
+    print(f'qc: {len(os.listdir(outdir))} files, {n} docs')
 
 # ── Ontario provincial EA (ontario.ca project pages) ─────────────────
 # The "Project documentation" sidebar on each project page links the notice

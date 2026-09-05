@@ -467,6 +467,14 @@ if os.path.exists(qc_path):
     cpath = os.path.join(RAW, 'qc_coords.json')
     if os.path.exists(cpath):
         coords = json.load(open(cpath))
+    # REE publishes no documents; the record is the BAPE dossier that
+    # scripts/link_qc_bape.py matched by name (data/raw/qc_bape_links.json)
+    bape_links = {}
+    lpath = os.path.join(RAW, 'qc_bape_links.json')
+    if os.path.exists(lpath):
+        bape_links = json.load(open(lpath))
+    qc_docdir = os.path.join(ROOT, 'data', 'docs', 'qc')
+    n_qc_linked = 0
     h = open(qc_path, encoding='utf-8', errors='replace').read()
     rows = re.findall(r'<tr[^>]*>(.*?)</tr>', h, re.S)
     for r in rows[1:]:
@@ -498,9 +506,22 @@ if os.path.exists(qc_path):
             'registry_url': ('https://www.ree.environnement.gouv.qc.ca/projet.asp?no_dossier=' + dossier)
                             if dossier else None,
         }
+        slug = bape_links.get(dossier)
+        if slug:
+            cpath = os.path.join(qc_docdir, f'{slug[:60]}.json')
+            if os.path.exists(cpath):
+                try:
+                    n_docs = len(json.load(open(cpath)).get('docs') or [])
+                except (ValueError, OSError):
+                    n_docs = 0
+                if n_docs:
+                    props['docs_path'] = f'data/docs/qc/{slug[:60]}.json'
+                    props['doc_count'] = n_docs
+                    props['bape_url'] = f'https://www.bape.gouv.qc.ca/fr/dossiers/{slug}/'
+                    n_qc_linked += 1
         add({'type': 'Feature', 'geometry': geom, 'properties': props})
         n_qc += 1
-print(f'quebec: {n_qc}')
+print(f'quebec: {n_qc} ({n_qc_linked} linked to a BAPE dossier)')
 
 # ── Nova Scotia (no coordinates in source; parsed for list/search) ───
 ns_path = os.path.join(RAW, 'ns_ea_projects.html')
