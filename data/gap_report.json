@@ -9,7 +9,7 @@
     {
       "source": "ero_on",
       "label": "Environmental Registry of Ontario (EA notices)",
-      "fetched": "2026-09-05",
+      "fetched": "2026-09-06",
       "count": 125
     },
     {
@@ -1928,7 +1928,7 @@
       },
       "verdict": "gap",
       "overridden": false,
-      "score": 0.3,
+      "score": 0.298,
       "name_score": 0.143,
       "match": {
         "id": null,
@@ -3633,7 +3633,7 @@
       },
       "verdict": "gap",
       "overridden": false,
-      "score": 0.272,
+      "score": 0.27,
       "name_score": 0.115,
       "match": {
         "id": null,
