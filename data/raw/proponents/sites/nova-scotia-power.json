@@ -1,0 +1,3284 @@
+{
+ "key": "nova scotia power",
+ "site": "https://www.nspower.ca/",
+ "host": "www.nspower.ca",
+ "fetched": 95,
+ "errors": {
+  "HTTPError: HTTP Error 404: Not Found": 1
+ },
+ "pages": [
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/large-load-preliminary-assessment",
+   "title": "Large Load Preliminary Assessment| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-commitments",
+   "title": "Our Environmental Commitments| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-commitments/preparing-for-environmental-emergencies",
+   "title": "Preparing for Environmental Emergencies| Nova Scotia Power",
+   "depth": 2,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-initiatives",
+   "title": "Environmental Initiatives| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-management-systems",
+   "title": "Environmental Management Systems| Nova Scotia Power",
+   "depth": 1,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-management-systems",
+   "title": "Environmental Management Systems| Nova Scotia Power",
+   "depth": 3,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/ruth-falls",
+   "title": "The Ruth Falls Dam Refurbishment Project| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/regulations",
+   "title": "Regulations - How We Operate| Nova Scotia Power",
+   "depth": 1,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives",
+   "title": "Regulatory Initiatives| Nova Scotia Power",
+   "depth": 2,
+   "docs": 24
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive",
+   "title": "Archive | Regulatory Initiatives| Nova Scotia Power",
+   "depth": 2,
+   "docs": 372
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/air-emissions-reporting",
+   "title": "Air Emissions Reporting| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-commitments",
+   "title": "Our Environmental Commitments| Nova Scotia Power",
+   "depth": 3,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/environmental-commitments",
+   "title": "Our Environmental Commitments| Nova Scotia Power",
+   "depth": 3,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/how-our-business-works",
+   "title": "Get to Know Our Business| Nova Scotia Power",
+   "depth": 1,
+   "docs": 2
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/how-our-business-works/ask-us-form",
+   "title": "Ask us Form| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-home/energy-products/battery-storage",
+   "title": "Battery Storage | Store Energy to Use Later in Your Home| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business",
+   "title": "Your Business | Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://myaccount.nspower.ca/auth.aspx",
+   "title": "MyAccount",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-home/create-manage-account/start-stop-move",
+   "title": "Start, Stop, Move Service| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/customer-service",
+   "title": "Customer Service - Contact Us| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/my-energy-insights",
+   "title": "MyEnergy Insights| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy",
+   "title": "Save Energy & Money| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/helping-businesses",
+   "title": "How We Help Businesses| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/demand-billing",
+   "title": "Demand Billing | Save Your Business Money & Energy| Nova Scotia Power",
+   "depth": 1,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy",
+   "title": "Make Your Own Energy | Your Business| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-home/energy-products/solar/solar-electricity-generation",
+   "title": "Generate Electricity from Solar| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/electric-vehicle-fleet",
+   "title": "Electricity Your Fleet | Choose An Electric Vehicle| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/compare-your-rate",
+   "title": "Compare Your Rate| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/business-rates",
+   "title": "Business Rates | Nova Scotia Power",
+   "depth": 1,
+   "docs": 4
+  },
+  {
+   "url": "https://www.nspower.ca/my-energy-insights",
+   "title": "MyEnergy Insights| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating",
+   "title": "Building & Renovating | Your Business| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/building-and-renovating-101",
+   "title": "Building & Renovating 101| Nova Scotia Power",
+   "depth": 2,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/request-a-line-rebate",
+   "title": "Request A Line Rebate| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/landlords",
+   "title": "For Landlords | Programs and Tips| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community",
+   "title": "Community | Giving Back| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community/income-based-programs",
+   "title": "Income-based Programs| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community/scholarships",
+   "title": "Scholarships| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community-investments",
+   "title": "Community Investments | Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community/grassroots-grants",
+   "title": "Grassroots Grants Program| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2026/08/17/milton-community-garden-with-grassroots-grants",
+   "title": "Milton Community Garden with Grassroots Grants| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us",
+   "title": "About Us| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/safety",
+   "title": "Safety| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/reliability",
+   "title": "Reliability | Powering Our Communities| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are",
+   "title": "Who We Are| Nova Scotia Power",
+   "depth": 1,
+   "docs": 2
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/plugged-in",
+   "title": "Plugged In | Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/producing",
+   "title": "Electricity| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/performance-standards",
+   "title": "Performance Standards| Nova Scotia Power",
+   "depth": 1,
+   "docs": 4
+  },
+  {
+   "url": "https://outagereport.nspower.ca/",
+   "title": "Outage Report Page",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2026/08/17/nova-scotia-energy-board-cyber-hearing--opening-remarks",
+   "title": "Nova Scotia Energy Board cyber hearing: Opening remarks| Nova Scotia Power",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-home/energy-products/heating-cooling",
+   "title": "Heating & Cooling| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/service-provider",
+   "title": "Service Provider Program| Nova Scotia Power",
+   "depth": 2,
+   "docs": 5
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/case-studies",
+   "title": "Case Studies | Energy Products & Services For Your Business| Nova Scotia Power",
+   "depth": 2,
+   "docs": 5
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2026/03/09/my-commitment-to-you",
+   "title": "My Commitments to You| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/case-studies",
+   "title": "Case Studies | Energy Products & Services For Your Business| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/demand-billing/electricity-savings",
+   "title": "Electricity Savings | Demand Billing| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering",
+   "title": "Commercial Net Metering| Nova Scotia Power",
+   "depth": 2,
+   "docs": 17
+  },
+  {
+   "url": "https://www.nspower.ca/your-business",
+   "title": "Your Business | Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/electrical-inspections",
+   "title": "Electrical Inspections | Building & Renovating| Nova Scotia Power",
+   "depth": 2,
+   "docs": 4
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/request-line-rebate-individual",
+   "title": "Apply for Line Rebate | Individual Rebate| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/request-line-rebate-developer",
+   "title": "Request a Line Rebate - Developer| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/your-business/building-renovating/request-line-rebate-underground",
+   "title": "Apply for Line Rebate - Underground Service| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2023/02/23/the-significance-of-african-heritage-month",
+   "title": "The significance of African Heritage Month| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles?taxonomy=tags&propertyType=tags&taxon=local-impact",
+   "title": "Articles| Nova Scotia Power",
+   "depth": 3,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2023/02/15/rainbow-refugee-ns-supports-lgbtqi-newcomers-through-a-circle-of-care-model",
+   "title": "Rainbow Refugee NS supports LGBTQI+ newcomers through a circle of care model| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community/grassroots-grants/grassroots-grants-mailing-list",
+   "title": "Grassroots Grants Mailing List| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2026/08/17/north-sydney-food-bank-with-grassroots-grants",
+   "title": "North Sydney Food Bank with Grassroots Grants| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/safety/scam-and-fraud-prevention",
+   "title": "Scam and Fraud Prevention| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/safety/electrical-awareness/electrical-safety-awareness---first-responders-and-construction-workers",
+   "title": "First Responders and Construction Workers| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/safety/electrical-awareness/residential-underground-distribution-line-awareness",
+   "title": "Residential Underground Distribution Line Awareness| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details",
+   "title": "Blog | Nova Scotia Power| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/plugged-in?category=Reliability&page=1",
+   "title": "Plugged In | Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/reliability/tree-management",
+   "title": "Vegetation Management| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2023/02/13/how-we-plan-and-stay-prepared-for-storms",
+   "title": "How we plan and stay prepared for storms| Nova Scotia Power",
+   "depth": 2,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2024/03/10/you-asked-we-answer-saturday-s-transmission-line-outage",
+   "title": "You Asked, We Answer: What caused Saturday’s transmission line outage?| Nova Scotia Power",
+   "depth": 3,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2021/09/01/you-asked-we-answer-what-causes-power-outages-and-how-are-you-preventing-them",
+   "title": "You Asked, We Answer: What causes power outages?| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2022/11/22/yawa-why-don-t-you-run-more-powerlines-underground",
+   "title": "Why don’t you run more powerlines underground?| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/community",
+   "title": "Community | Giving Back| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are/leadership-team",
+   "title": "Leadership Team | Our People| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are/board",
+   "title": "Board of Directors| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are/ceo-updates",
+   "title": "CEO Updates| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are/suppliers",
+   "title": "Suppliers| Nova Scotia Power",
+   "depth": 2,
+   "docs": 1
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/who-we-are/research-and-feedback",
+   "title": "Customer Research and Feedback| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2021/02/01/performance-standards-101",
+   "title": "Performance Standards 101| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2026/03/25/our-commitments--office-of-the-privacy-commissioner-of-canada-investigation",
+   "title": "Our Commitments: Office of the Privacy Commissioner of Canada investigation| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles?taxonomy=tags&propertyType=tags&taxon=customer-care",
+   "title": "Articles| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2025/12/11/our-customer-care-team-is-hosting-in-person-support-sessions",
+   "title": "Our Customer Care team is hosting in-person support sessions| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/about-us/articles/details/articles/2025/06/04/standing-committee-on-public-accounts--opening-remarks",
+   "title": "Standing Committee on Public Accounts: Opening remarks| Nova Scotia Power",
+   "depth": 2,
+   "docs": 0
+  },
+  {
+   "url": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries",
+   "title": "Grid-scale Batteries | Innovation at Nova Scotia Power| Nova Scotia Power",
+   "depth": 2,
+   "docs": 6
+  },
+  {
+   "url": "https://www.nspower.ca/your-home/save-money-energy/make-own-energy/self-generating-option",
+   "title": "Self-Generating Option| Nova Scotia Power",
+   "depth": 2,
+   "docs": 2
+  }
+ ],
+ "docs": [
+  {
+   "url": "https://laws.justice.gc.ca/PDF/SOR-2019-51.pdf",
+   "title": "Federal Environmental Emergency Regulations",
+   "type": "other",
+   "page": "https://www.nspower.ca/cleanandgreen/environmental-commitments/preparing-for-environmental-emergencies"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-contractor-environmental-requirements-2026.pdf?sfvrsn=c4d3290b_1",
+   "title": "Contractor Environmental Requirements Handbook",
+   "type": "other",
+   "page": "https://www.nspower.ca/cleanandgreen/environmental-management-systems"
+  },
+  {
+   "url": "https://nslegislature.ca/sites/default/files/legc/statutes/public%20utilities.pdf",
+   "title": "Public Utilities Act",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/20260102-nseb-to-nspi-m12588---nova-scotia-power-inc---ci-c0053699-renewable-to-retail-implementation-hearing-order.pdf?sfvrsn=9c39a338_1",
+   "title": "20260102 NSEB to NSPI M12588 - Nova Scotia Power Inc. - CI C0053699 – Renewable to Retail Implementation Hearing Order",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/m12451---amended-notice-of-public-hearing.pdf?sfvrsn=b94158e5_1",
+   "title": "Amended Notice of Public Hearing",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/m12451---amended-hearing-order.pdf?sfvrsn=cbb5276f_1",
+   "title": "General Rate Application (M12451)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/july-18-2025-notice-of-paper-hearing---2025-10-year-system-outlook-report-(m12386).pdf?sfvrsn=3b82ad65_1",
+   "title": "Notice of Paper Hearing - 2025 10-Year System Outlook Report (M12386)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---ci-c0010778---smart-grid-ns-project---asset-disposition-application-(m12178).pdf?sfvrsn=4aa244f4_1",
+   "title": "Notice of Paper Hearing - CI C0010778 - Smart Grid NS Project - Asset Disposition Application (M12178)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---wasoqonatl-transmission-incorporated---ns-nb-reliability-intertie-project-application-(m12217).pdf?sfvrsn=e5aa0183_1",
+   "title": "Notice of Paper Hearing - Wasoqonatl Transmission Incorporated - NS-NB Reliability Intertie Project Application (M12217)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---ci-c0010778-smart-grid-nova-scotia-asset-disposition-application-(m12178).pdf?sfvrsn=8f9e57d4_1",
+   "title": "Notice of Paper Hearing - CI C0010778 Smart Grid Nova Scotia Asset Disposition Application (M12178)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---application-for-approval-of-a-third-term-for-the-extra-large-industrial-active-demand-control-tariff-(m12184).pdf?sfvrsn=279bf2bc_1",
+   "title": "Notice of Paper Hearing - Application for Approval of a Third Term for the Extra Large Industrial Active Demand Control Tariff (M12184)",
+   "type": "permit_approval",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---ci-c0050414---hyd-roseway-asset-decommissioning-(m11556).pdf?sfvrsn=1ea90826_1",
+   "title": "Notice of Paper Hearing - CI C0050414 - HYD Roseway Asset Decommissioning (M11556)",
+   "type": "closure",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/amended-notice-of-paper-hearing---ci-50518-hyd-ruth-falls-main-dam-refurbishment-(m11927).pdf?sfvrsn=6bdf6aed_1",
+   "title": "Amended Notice of Paper Hearing - CI 50518 – HYD Ruth Falls Main Dam Refurbishment (M11927)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/hearing-order---2025-wacc-and-afudc-rates-application-(m11990).pdf?sfvrsn=3d5f27df_1",
+   "title": "Hearing Order - 2025 WACC and AFUDC Rates Application (M11990)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---ci-50518-hyd-ruth-falls-main-dam-refurbishment-(m11927).pdf?sfvrsn=eb571c61_1",
+   "title": "Notice of Paper Hearing - CI 50518 – HYD Ruth Falls Main Dam Refurbishment (M11927)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/hearing-order---community-solar-energy-credit-rider-(m11911).pdf?sfvrsn=7a92e6fa_1",
+   "title": "Hearing Order - Community Solar Energy Credit Rider (M11911)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/hearing-order---2025-dsm-cost-recovery-rider-(m11912).pdf?sfvrsn=1a86461_1",
+   "title": "Hearing Order - 2025 DSM Cost Recovery Rider (M11912)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---renewable-to-retail-implementation-costs-(m11874).pdf?sfvrsn=227e0aee_1",
+   "title": "Notice of Paper Hearing - Renewable to Retail Implementation Costs (M11874)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---fuel-adjustment-mechanism-(fam)-audit-conducted-by-bates-white-for-2022-and-2023-(m11533).pdf?sfvrsn=a437acde_1",
+   "title": "Notice of Paper Hearing - Fuel Adjustment Mechanism (FAM) Audit, conducted by Bates White for 2022 and 2023 (M11533)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/bill-inserts/20240513-nsuarb-to-nspi-m11656---ci-c0053316-michelin-waterville-dvr-amended-notice-of-paper-hearing-may-13.pdf?sfvrsn=8610697a_1",
+   "title": "20240513 NSUARB to NSPI M11656 - CI C0053316 – Michelin Waterville DVR Amended Notice of Paper Hearing May 13",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/notice-of-paper-hearing---2023-storm-cost-recovery-rider-application-(m11692)9a79ac22-d0e7-49f1-9522-ee75c1484822.pdf?sfvrsn=5ae185f5_1",
+   "title": "Notice of Paper Hearing - 2023 Storm Cost Recovery Rider Application (M11692)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20240328--nsuarb-to-parties-m11621-smart-grid-nova-scotia-project---final-report-notice-of-pape.pdf?sfvrsn=34d7e2b0_1",
+   "title": "Notice of Paper Hearing - Smart Grid Nova Scotia Project Final Report (M11624)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/notices-of-hearings/m11598---notice-of-paper-hearing.pdf?sfvrsn=7bc2902d_3",
+   "title": "Notice of Paper Hearing - CI C0041506 – LM6000 191-253 Major Engine Refurbishment ATO (MM11598)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/ns-power-battery-capital-application_jan-25-2024.pdf?sfvrsn=a93e8178_1",
+   "title": "Battery Energy Storage System (BESS) Project Capital Cost Approval Application",
+   "type": "permit_approval",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/m11539---hearing-order.pdf?sfvrsn=917aba0_1",
+   "title": "Hearing Order",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/m11539---notice-of-paper-hearing.pdf?sfvrsn=9c64995c_1",
+   "title": "Notice of Paper Hearing",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/m11475---notice-of-intention-to-apply-for-approval-of-a-cost-of-service-study.pdf?sfvrsn=668ae679_1",
+   "title": "here",
+   "type": "permit_approval",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20181129-nspi-to-uarb-2019-ace-plan-cover-letter.pdf?sfvrsn=4f84715e_0",
+   "title": "NS Power to UARB 2019 ACE Plan Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20181211-2019-ace-plan-revised-redacted.pdf?sfvrsn=dcacda20_0",
+   "title": "NS Power 2019 ACE Plan REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20181129-2019-ace-plan-confidential-undertaking.pdf?sfvrsn=8e091cdf_0",
+   "title": "20181129 2019 ACE Plan Confidential Undertaking",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20171122-nspi-to-uarb-2018-ace-plan-cover-letter(1).pdf?sfvrsn=c3144604_0",
+   "title": "NS Power to UARB 2018 ACE Plan Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20171122-2018-ace-plan-redacted.pdf?sfvrsn=11a3452a_0",
+   "title": "20171122 2018 ACE Plan-REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20171122-2018-ace-plan-confidential-undertaking.pdf?sfvrsn=eaff6db1_0",
+   "title": "NS Power 2018 ACE Plan Confidentiality Undertaking",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/ns-power-2016-2018-dsm-plan-evidence.pdf?sfvrsn=f02108c0_0",
+   "title": "NS Power 2016-2018 DSM Plan EVIDENCE",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2016-2018-dsm-plan---board-order.pdf?sfvrsn=95bca92e_0",
+   "title": "2016-2018 DSM Plan - Board Order",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---0-list-of-content.pdf?sfvrsn=e119e03a_0",
+   "title": "NSPI 2013 GRA - 0 List of Content",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---1-de-01.pdf?sfvrsn=bc7cb931_0",
+   "title": "NSPI 2013 GRA - 1 DE 01",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---1-de-02-04.pdf?sfvrsn=903414fa_0",
+   "title": "NSPI 2013 GRA - 1 DE 02-04",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---1-de-appendices---redacted.pdf?sfvrsn=9c5868b7_0",
+   "title": "NSPI 2013 GRA - 1 DE Appendices - REDACTED",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---2-sr---redacted.pdf?sfvrsn=955c258d_0",
+   "title": "NSPI 2013 GRA - 2 SR - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---3-op---redacted.pdf?sfvrsn=884f0600_0",
+   "title": "NSPI 2013 GRA - 3 OP - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---4-for---redacted.pdf?sfvrsn=980d7585_0",
+   "title": "NSPI 2013 GRA - 4 FOR - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---5-rb---redacted.pdf?sfvrsn=2f13b019_0",
+   "title": "NSPI 2013 GRA - 5 RB - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---6-da---redacted.pdf?sfvrsn=8c080697_0",
+   "title": "NSPI 2013 GRA - 6 DA - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---7-or---redacted.pdf?sfvrsn=155d0327_0",
+   "title": "NSPI 2013 GRA - 7 OR - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---8-oe---redacted.pdf?sfvrsn=22598533_0",
+   "title": "NSPI 2013 GRA - 8 OE - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---9-cs---redacted.pdf?sfvrsn=9122a4e9_0",
+   "title": "NSPI 2013 GRA - 9 CS - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---10-pr---redacted.pdf?sfvrsn=4f4be52f_0",
+   "title": "NSPI 2013 GRA - 10 PR - REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(avon)-ir-74-att-1-electronic.xlsx?sfvrsn=539489f3_0",
+   "title": "2012-06-25 NSPI (Avon) IR-74 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(avon)-irs-1-82-redaced.pdf?sfvrsn=c943201f_0",
+   "title": "2012-06-25 NSPI (Avon) IRs 1-82 REDACED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(booth)-irs-1-12-redacted.pdf?sfvrsn=43a072db_0",
+   "title": "2012-06-25 NSPI (Booth) IRs 1-12 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-36-att-1-electronic.xlsx?sfvrsn=f959fd6f_0",
+   "title": "2012-06-25 NSPI (CA) IR-36 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-1-electronic.xls?sfvrsn=9b65d6e2_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-2-electronic.xls?sfvrsn=f47e41a3_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-3-electronic.xls?sfvrsn=771be851_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 3 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-4-electronic.xls?sfvrsn=b4f5d954_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 4 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-5-electronic.xls?sfvrsn=b99a74eb_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 5 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-6-electronic.xls?sfvrsn=ef1f8724_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 6 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-46-att-7-electronic.xlsx?sfvrsn=1a59cb04_0",
+   "title": "2012-06-25 NSPI (CA) IR-46 Att 7 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-47-att-1-electronic.xls?sfvrsn=ad28d2c1_0",
+   "title": "2012-06-25 NSPI (CA) IR-47 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-47-att-2-electronic.xlsx?sfvrsn=eed99e89_0",
+   "title": "2012-06-25 NSPI (CA) IR-47 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-58-att-1-electronic.xls?sfvrsn=d6dd77c7_0",
+   "title": "2012-06-25 NSPI (CA) IR-58 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-59-att-1-electronic.xls?sfvrsn=18b12768_0",
+   "title": "2012-06-25 NSPI (CA) IR-59 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-59-att-2-electronic.xlsx?sfvrsn=50a569c4_0",
+   "title": "2012-06-25 NSPI (CA) IR-59 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-60-att-1-electronic.xls?sfvrsn=26b05c07_0",
+   "title": "2012-06-25 NSPI (CA) IR-60 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-ir-61-att-1-electronic.xls?sfvrsn=3ea9f90b_0",
+   "title": "2012-06-25 NSPI (CA) IR-61 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(ca)-irs-1-61-redacted.pdf?sfvrsn=da3f1310_0",
+   "title": "2012-06-25 NSPI (CA) IRs 1-61 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(eckler)-irs-1-21-redacted.pdf?sfvrsn=1d15d435_0",
+   "title": "2012-06-25 NSPI (Eckler) IRs 1-21 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(hrm)-ir-10-att-1-electronic.xls?sfvrsn=5c4100fa_0",
+   "title": "2012-06-25 NSPI (HRM) IR-10 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(hrm)-ir-10-att-2-electronic.xlsx?sfvrsn=f1fb145e_0",
+   "title": "2012-06-25 NSPI (HRM) IR-10 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(hrm)-ir-11-att-1-electronic.xlsx?sfvrsn=4fa16ab0_0",
+   "title": "2012-06-25 NSPI (HRM) IR-11 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(hrm)-ir-12-att-1-electronic.xlsx?sfvrsn=efa6d682_0",
+   "title": "2012-06-25 NSPI (HRM) IR-12 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(hrm)-irs-1-14.pdf?sfvrsn=3b4ba633_0",
+   "title": "2012-06-25 NSPI (HRM) IRs 1-14",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(larkin)-irs-1-24-redacted.pdf?sfvrsn=68a0556a_0",
+   "title": "2012-06-25 NSPI (Larkin) IRs 1-24 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(liberal)-irs-1-19-redacted.pdf?sfvrsn=1e3d64eb_0",
+   "title": "2012-06-25 NSPI (Liberal) IRs 1-19 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(liberty)-irs-1-80-redacted.pdf?sfvrsn=d98e0eb2_0",
+   "title": "2012-06-25 NSPI (Liberty) IRs 1-80 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(meunsc)-irs-1-5-redacted.pdf?sfvrsn=9379748e_0",
+   "title": "2012-06-25 NSPI (MEUNSC) IRs 1-5 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(multeese)-ir-55-att-1-electronic.xlsx?sfvrsn=97784181_0",
+   "title": "2012-06-25 NSPI (Multeese) IR-55 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(multeese)-ir-55-att-2-electronic.xlsx?sfvrsn=eb07e58e_0",
+   "title": "2012-06-25 NSPI (Multeese) IR-55 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(multeese)-irs-1-61-redacted.pdf?sfvrsn=5813b02c_0",
+   "title": "2012-06-25 NSPI (Multeese) IRs 1-61 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(nse)-irs-1-4.pdf?sfvrsn=1cef6f70_0",
+   "title": "2012-06-25 NSPI (NSE) IRs 1-4",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(nsuarb)-irs-1-32-redacted.pdf?sfvrsn=1bfa5d2f_0",
+   "title": "2012-06-25 NSPI (NSUARB) IRs 1-32 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(pc)-irs-1-6-redacted.pdf?sfvrsn=ec67cd63_0",
+   "title": "2012-06-25 NSPI (PC) IRs 1-6 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(sba)-irs-1-27.pdf?sfvrsn=d6e6d687_0",
+   "title": "2012-06-25 NSPI (SBA) IRs 1-27",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-1-electronic.xls?sfvrsn=444e2354_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-2-electronic.xls?sfvrsn=dbd73ae9_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-3-electronic.xls?sfvrsn=163fc64_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 3 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-4-electronic.xls?sfvrsn=316ceadc_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 4 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-5-electronic.xls?sfvrsn=12505ac1_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 5 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-1-att-6-electronic.xls?sfvrsn=ff2f1edf_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-1 Att 6 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-ir-2-att-1-electronic.xls?sfvrsn=3604810a_0",
+   "title": "2012-06-25 NSPI (Synapse) IR-2 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-06-25-nspi-(synapse)-irs-1-4.pdf?sfvrsn=84709841_0",
+   "title": "2012-06-25 NSPI (Synapse) IRs 1-4",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(aec)-irs-1-50-redacted.pdf?sfvrsn=a6397ae_0",
+   "title": "2012-07-23 NSPI (AEC) IRs 1-50 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(alton)-irs-1-11-redacted.pdf?sfvrsn=7280d90_0",
+   "title": "2012-07-23 NSPI (Alton) IRs 1-11 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(avon)-irs-83-119-redacted.pdf?sfvrsn=5addfcff_0",
+   "title": "2012-07-23 NSPI (Avon) IRs 83-119 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(ca)-ir-82-att-1-electronic.xls?sfvrsn=f82fa3ea_0",
+   "title": "2012-07-23 NSPI (CA) IR-82 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(ca)-ir-82-att-2-electronic.xls?sfvrsn=658e044c_0",
+   "title": "2012-07-23 NSPI (CA) IR-82 Att 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(ca)-irs-62-112-redacted.pdf?sfvrsn=8282ab40_0",
+   "title": "2012-07-23 NSPI (CA) IRs 62-112 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(eckler)-irs-22-29-redacted.pdf?sfvrsn=48e37f8e_0",
+   "title": "2012-07-23 NSPI (Eckler) IRs 22-29 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(hrm)-ir-15-att-1-electronic.xlsx?sfvrsn=f7882d92_0",
+   "title": "2012-07-23 NSPI (HRM) IR-15 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(hrm)-ir-27-att-1-electronic.xlsx?sfvrsn=1433cdc6_0",
+   "title": "2012-07-23 NSPI (HRM) IR-27 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(hrm)-ir-28-att-1-electronic.xlsx?sfvrsn=8b026600_0",
+   "title": "2012-07-23 NSPI (HRM) IR-28 Att 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(hrm)-irs-15-36.pdf?sfvrsn=a73d887d_0",
+   "title": "2012-07-23 NSPI (HRM) IRs 15-36",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(larkin)-irs-25-29-redacted.pdf?sfvrsn=5e53bfe4_0",
+   "title": "2012-07-23 NSPI (Larkin) IRs 25-29 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(liberal)-irs-20-23.pdf?sfvrsn=1737025c_0",
+   "title": "2012-07-23 NSPI (Liberal) IRs 20-23",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(liberty)-irs-81-174-redacted.pdf?sfvrsn=e011f3eb_0",
+   "title": "2012-07-23 NSPI (Liberty) IRs 81-174 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(multeese)-irs-62-65-redacted.pdf?sfvrsn=d823322f_0",
+   "title": "2012-07-23 NSPI (Multeese) IRs 62-65 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(nsdoe)-irs-1-21-redacted.pdf?sfvrsn=dd6c54a6_0",
+   "title": "2012-07-23 NSPI (NSDOE) IRs 1-21 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(nsuarb)-irs-33-61-redacted.pdf?sfvrsn=16c8032f_0",
+   "title": "2012-07-23 NSPI (NSUARB) IRs 33-61 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(pc)-irs-7-32-redacted.pdf?sfvrsn=79e569da_0",
+   "title": "2012-07-23 NSPI (PC) IRs 7-32 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2012-07-23-nspi-(sba)-irs-28-50-redacted.pdf?sfvrsn=ae7ad13c_0",
+   "title": "2012-07-23 NSPI (SBA) IRs 28-50 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2013-gra---reply-evidence.pdf?sfvrsn=c8730ab5_0",
+   "title": "NSPI 2013 GRA - Reply Evidence",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110513-nspi-to-uarb-2012-rate-application.pdf?sfvrsn=e2c96ab1_0",
+   "title": "NSPI Cover Letter to UARB – 2012 General Rate Application",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra-de-01-notice-of-application.pdf?sfvrsn=d89667d3_0",
+   "title": "NSPI 2012 GRA – Notice of Application",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---1-de---redacted.pdf?sfvrsn=a8d229f_0",
+   "title": "NSPI 2012 GRA – Direct Evidence (DE)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---2-sr---redacted.pdf?sfvrsn=7ecbc59f_0",
+   "title": "NSPI 2012 GRA – Studies & Reports (SR)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---3-op---redacted.pdf?sfvrsn=16e6fb2d_0",
+   "title": "NSPI 2012 GRA – Organization Profile (OP)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---4-for---redacted.pdf?sfvrsn=286c30fd_0",
+   "title": "NSPI 2012 GRA – Financial Outlook (FOR)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---5-rb---redacted.pdf?sfvrsn=16d7a259_0",
+   "title": "NSPI 2012 GRA – Rate Base (RB)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---6-da---redacted.pdf?sfvrsn=4479682a_0",
+   "title": "NSPI 2012 GRA – Depreciation & Amortization (DA)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---7-or---redacted.pdf?sfvrsn=824084b6_0",
+   "title": "NSPI 2012 GRA – Operating Revenues (OR)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---8-oe---redacted.pdf?sfvrsn=271154a4_0",
+   "title": "NSPI 2012 GRA – Operating Expenses (OE)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---9-cs---redacted.pdf?sfvrsn=5b522c39_0",
+   "title": "NSPI 2012 GRA – Capital Structure (CS)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-2012-gra---10-pr---redacted.pdf?sfvrsn=4ed5246b_0",
+   "title": "NSPI 2012 GRA – Proposed Rates & Regulations (PR)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-to-uarb-2012-gra-settlement(1).pdf?sfvrsn=ebd8979e_0",
+   "title": "NSPI to UARB - 2012 GRA Settlement Agreement",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nov29-gra-decision.pdf?sfvrsn=fd10fe44_0",
+   "title": "UARB Decision",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(avon)-20110713-irs-1-17-redacted.pdf?sfvrsn=18e3e45d_0",
+   "title": "NSPI (Avon) 20110713 IRs 1-17 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(avon)-ir-043-att-1.xls?sfvrsn=27ddf250_0",
+   "title": "NSPI (Avon) 20110718 IR-043 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(avon)-irs-18-49-redacted.pdf?sfvrsn=21b41be5_0",
+   "title": "NSPI (Avon) 20110718 IRs 18-49",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110624-irs-1-21-redacted.pdf?sfvrsn=3d3dd222_0",
+   "title": "NSPI (CA) 20110624 IRs 1-21 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110630-irs-22-93-redacted.pdf?sfvrsn=235a2eae_0",
+   "title": "NSPI (CA) 20110630 IRs 22-93 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110630-ir-091-att-1.xls?sfvrsn=33a183ef_0",
+   "title": "NSPI (CA) 20110630 IR-091 Att 1.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110630-ir-092-att-1.xls?sfvrsn=50797ba_0",
+   "title": "NSPI (CA) 20110630 IR-092 Att 1.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110714-irs-94-156-redacted.pdf?sfvrsn=b0ce0f71_0",
+   "title": "NSPI (CA) 20110714 IRs 94-156 REDACTED.pdf",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(ca)-20110714-ir-144-att-1.xlsx?sfvrsn=771c2535_0",
+   "title": "NSPI (CA) 20110714 IR-144 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(ca)-ir-187-att-15.xlsx?sfvrsn=b1195c36_0",
+   "title": "NSPI (CA) 20110718 IR-187 Att 15",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(ca)-ir-187-att-16.xls?sfvrsn=4172fe14_0",
+   "title": "NSPI (CA) 20110718 IR-187 Att 16",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(ca)-irs-157-191-redacted.pdf?sfvrsn=91c06fe3_0",
+   "title": "NSPI (CA) 20110718 IRs 157-191",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(eac)-irs-1-23-redacted.pdf?sfvrsn=8f4a72aa_0",
+   "title": "NSPI (EAC) 20110718 IRs 1-23",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(hrm)-20110627-irs-1-41-redacted.pdf?sfvrsn=2bb06eb2_0",
+   "title": "NSPI (HRM) 20110627 IRs 1-41 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(hrm)-20110627-ir-01-att-1.xls?sfvrsn=68d47942_0",
+   "title": "NSPI (HRM) 20110627 IR-01 Att 1.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(hrm)-20110627-ir-02-att-1.xlsx?sfvrsn=3bece582_0",
+   "title": "NSPI (HRM) 20110627 IR-02 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(hrm)-20110627-ir-17-att-1.xls?sfvrsn=6c25ce39_0",
+   "title": "NSPI (HRM) 20110627 IR-17 Att 1.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(hrm)-irs-42-70-redacted.pdf?sfvrsn=a10b4010_0",
+   "title": "NSPI (HRM) 20110718 IRs 42-70",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(larkin)-20110715-irs-1-11-redacted.pdf?sfvrsn=d4dbadb4_0",
+   "title": "NSPI (Larkin) 20110715 IRs 1-11",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(larkin)-irs-12-21-redacted.pdf?sfvrsn=298586e2_0",
+   "title": "NSPI (Larkin) 20110718 IRs 12-21",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(liberal)-irs-1-33.pdf?sfvrsn=bece0390_0",
+   "title": "NSPI (Liberal) 20110718 IRs 1-33",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110601-irs-1-21-redacted.pdf?sfvrsn=26532b30_0",
+   "title": "NSPI (Liberty) 20110601 IRs 1-21 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110607-irs-22-86-redacted.pdf?sfvrsn=bbcbeac7_0",
+   "title": "NSPI (Liberty) 20110607 IRs 22-86 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110608-ir-24-attachments-1-and-2.pdf?sfvrsn=71d09200_0",
+   "title": "NSPI (Liberty) 20110608 IR-24 Attachments 1 and 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110608-ir-52-attachments-1-and-2.pdf?sfvrsn=b5622591_0",
+   "title": "NSPI (Liberty) 20110608 IR-52 Attachments 1 and 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110628-ir-111-att-1.xlsx?sfvrsn=8ad208c5_0",
+   "title": "NSPI (Liberty) 20110628 IR-111 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110628-ir-126-att-1.xlsx?sfvrsn=a37aa2f9_0",
+   "title": "NSPI (Liberty) 20110628 IR-126 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110628-ir-126-att-2.xlsx?sfvrsn=7449eb04_0",
+   "title": "NSPI (Liberty) 20110628 IR-126 Att 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110628-ir-126-att-3.xlsx?sfvrsn=2ef7e203_0",
+   "title": "NSPI (Liberty) 20110628 IR-126 Att 3",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110628-irs-87-131-redacted.pdf?sfvrsn=876a872d_0",
+   "title": "NSPI (Liberty) 20110628 IRs 87-131 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110629-ir-139-att-1.xlsx?sfvrsn=f7b46138_0",
+   "title": "NSPI (Liberty) 20110629 IR-139 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110629-irs-132-143-redacted.pdf?sfvrsn=d4e9de7d_0",
+   "title": "NSPI (Liberty) 20110629 IRs 132-143 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110706-ir-144-att-1.xlsx?sfvrsn=7c5bc8d2_0",
+   "title": "NSPI (Liberty) 20110706 IR-144 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110706-ir-152-att-1.xlsx?sfvrsn=7eff14b3_0",
+   "title": "NSPI (Liberty) 20110706 IR-152 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110706-ir-152-att-2.xlsx?sfvrsn=e38c54c4_0",
+   "title": "NSPI (Liberty) 20110706 IR-152 Att 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110706-irs-144-154-redacted.pdf?sfvrsn=2ff3f8d0_0",
+   "title": "NSPI (Liberty) 20110706 IRs 144-154 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110711-irs-155-161.pdf?sfvrsn=f439cbc5_0",
+   "title": "NSPI (Liberty) 20110711 IRs 155-161",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110713-ir-168-att-1.xls?sfvrsn=4afedda7_0",
+   "title": "NSPI (Liberty) 20110713 IR-168 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(liberty)-20110713-irs-162-169-redacted.pdf?sfvrsn=f3db8e23_0",
+   "title": "NSPI (Liberty) 20110713 IRs 162-169 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(liberty)-ir-175-att-1.xlsx?sfvrsn=219af3d6_0",
+   "title": "NSPI (Liberty) 20110718 IR-175 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(liberty)-ir-189-att-1.xlsx?sfvrsn=b6f5ae84_0",
+   "title": "20110718 NSPI (Liberty) IR-189 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(liberty)-irs-170-191-redacted.pdf?sfvrsn=b50b6a31_0",
+   "title": "NSPI (Liberty) 20110718 IRs 170-191",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(multeese)-20110610-irs-1-16.pdf?sfvrsn=2c057327_0",
+   "title": "NSPI (Multeese) 20110610 IRs 1-16",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(multeese)-20110610-ir-6-att-1.xls?sfvrsn=113d547_0",
+   "title": "NSPI (Multeese) 20110610 IR-6 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(multeese)-20110715-irs-17-36.pdf?sfvrsn=b40559d6_0",
+   "title": "NSPI (Multeese) 20110715 IRs 17-36",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(multeese)-irs-37-42.pdf?sfvrsn=f9ae5cd6_0",
+   "title": "NSPI (Multeese) 20110718 IRs 37-42",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-irs-1-111-redacted.pdf?sfvrsn=204df1ff_0",
+   "title": "NSPI (NPB) 20110630 IRs 1-111 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-026-att-1.xlsx?sfvrsn=4b0e7c80_0",
+   "title": "NSPI (NPB) 20110630 IR-026 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-032-att-1.xlsx?sfvrsn=c4844cba_0",
+   "title": "NSPI (NPB) 20110630 IR-032 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-049-att-1.xlsx?sfvrsn=c9ad11e4_0",
+   "title": "NSPI (NPB) 20110630 IR-049 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-089-att-1.xlsx?sfvrsn=85c50e55_0",
+   "title": "NSPI (NPB) 20110630 IR-089 Att 1.xlsx",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-01.xls?sfvrsn=d036271c_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 01.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-02.xls?sfvrsn=61e95ae5_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 02.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-03.xls?sfvrsn=ff47ef77_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 03.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-05.xls?sfvrsn=2c01e5ef_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 05.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-08.xls?sfvrsn=7a12c74f_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 08.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-09.xls?sfvrsn=e89c4d87_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 09.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-10.xls?sfvrsn=5bfb693_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 10.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-11.xls?sfvrsn=7415f36_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 11.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-12.xls?sfvrsn=9f8a707a_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 12.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-13.xls?sfvrsn=ef7537f0_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 13.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-14.xls?sfvrsn=751c63ee_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 14.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-15.xls?sfvrsn=d827260a_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 15.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-16.xls?sfvrsn=519ecf7b_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 16",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-17.xls?sfvrsn=67a514c6_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 17.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-18.xls?sfvrsn=f525e481_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 18.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-19.xls?sfvrsn=64fe655f_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 19.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-20.xls?sfvrsn=1c0d13ba_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 20.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-21.xls?sfvrsn=705d2cde_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 21.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-28d6c46d54afc24886aa70b1bf706fc2ac.xls?sfvrsn=6372520f_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 28",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-29.xls?sfvrsn=4c247c40_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 29",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-30.xls?sfvrsn=528a19e5_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 30.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-31.xls?sfvrsn=cfe77b2_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 31.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-32.xls?sfvrsn=3fa137c8_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 32.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-33.xls?sfvrsn=125ecd32_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 33",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-36.xls?sfvrsn=55021c16_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 36.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-37.xls?sfvrsn=d08bd293_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 37.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-38.xls?sfvrsn=ab598451_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 38.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-42.xls?sfvrsn=64166d42_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 42.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-44.xls?sfvrsn=fbf6a8eb_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 44.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-55.xls?sfvrsn=4608f784_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 55.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-56.xls?sfvrsn=9504ae60_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 56.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-57.xls?sfvrsn=b4f25c05_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 57.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-58.xls?sfvrsn=9f01aa9d_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 58.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-59.xls?sfvrsn=4a3a26d9_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 59.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-60.xls?sfvrsn=eb635766_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 60.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-61.xls?sfvrsn=15015220_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 61.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-62.xls?sfvrsn=3358d2b4_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 62.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-63.xls?sfvrsn=cbc9307_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 63.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-65.xls?sfvrsn=854f1c6f_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 65.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-66.xls?sfvrsn=65944982_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 66.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-67.xls?sfvrsn=fb5aeced_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 67.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-68.xls?sfvrsn=2e730965_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 68.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-095-att-70.xls?sfvrsn=e28ca2b0_0",
+   "title": "NSPI (NPB) 20110630 IR-095 Att 70.xls",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110630-ir-099-att-redacted.pdf?sfvrsn=9709a31a_0",
+   "title": "NSPI (NPB) 20110630 IR-099 Att REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110713-ir-116-att-1.xls?sfvrsn=c203a5a7_0",
+   "title": "NSPI (NPB) 20110713 IR-116 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(npb)-20110713-irs-112-139-redacted.pdf?sfvrsn=ab7100d3_0",
+   "title": "NSPI (NPB) 20110713 IRs 112-139 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(npb)-irs-140-208-redacted.pdf?sfvrsn=60e3d4e5_0",
+   "title": "NSPI (NPB) 20110718 IRs 140-208",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(nsdoe)-irs-1-27-redacted.pdf?sfvrsn=b71f0f10_0",
+   "title": "NSPI (NSDOE) 20110718 IRs 1-27",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20110718-nspi-(sba)-irs-1-25.pdf?sfvrsn=a438cc52_0",
+   "title": "NSPI (SBA) 20110718 IRs 1-25",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(synapse)-20110623-ir-1-8.pdf?sfvrsn=4c3bcfac_0",
+   "title": "NSPI (Synapse) 20110623 IR 1-8",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(woolridge)-20110713-irs-1-9-redacted.pdf?sfvrsn=26d5fe9_0",
+   "title": "NSPI (Woolridge) 20110713 IRs 1-9",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(woolridge)-20110714-ir-010-att-1.docx?sfvrsn=55a02211_0",
+   "title": "NSPI (Woolridge) 20110714 IR-010 Att 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(woolridge)-20110714-ir-010-att-2.doc?sfvrsn=2606fac_0",
+   "title": "NSPI (Woolridge) 20110714 IR-010 Att 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(woolridge)-20110714-ir-015-att-4.xlsx?sfvrsn=f261b427_0",
+   "title": "NSPI (Woolridge) 20110714 IR-015 Att 4",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nspi-(woolridge)-20110714-irs-10-16.pdf?sfvrsn=664fdc63_0",
+   "title": "NSPI (Woolridge) 20110714 IRs 10-16",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20150901-rtr-application.pdf?sfvrsn=833aac50_0",
+   "title": "September 1, 2015 - Application",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-11a-20150521-att-c---coss-model-electronic.xls?sfvrsn=e81fc018_0",
+   "title": "September 1, 2015 - Appendix 11A 20150521 Att C - COSS Model ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13a-ca-dr-04-att-2-electronic.xlsx?sfvrsn=38c1971e_0",
+   "title": "September 1, 2015 - Appendix 13A CA DR-04 Att 2 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13b-multeese-dr-25-att-1-electronic.xlsx?sfvrsn=77c04b76_0",
+   "title": "September 1, 2015 - Appendix 13B Multeese DR-25 Att 1 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13c-multeese-dr-29-att-1-electronic.xlsx?sfvrsn=cf13ae49_0",
+   "title": "September 1, 2015 - Appendix 13C Multeese DR-29 Att 1 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13d-multeese-dr-31-att-1-electronic.xls?sfvrsn=b91ffb5f_0",
+   "title": "September 1, 2015 - Appendix 13D Multeese DR-31 Att 1 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13e-swfi-dr-01-att-1-electronic.xlsx?sfvrsn=c6a8d06b_0",
+   "title": "September 1, 2015 - Appendix 13E SWFI DR-01 Att 1 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-13f-swfi-dr-02-att-1-electronic.xlsx?sfvrsn=af543d4_0",
+   "title": "September 1, 2015 - Appendix 13F SWFI DR-02 Att 1 ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-14a-20150729-swfi-dr-01-att-1-electronic-with-rtt.xlsx?sfvrsn=ad397bc7_0",
+   "title": "SSeptember 1, 2015 - Appendix 14A 20150729 SWFI DR-01 Att 1 ELECTRONIC with RTT",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-17a-dt-rates-calculations-electronic.xls?sfvrsn=a1586a0e_0",
+   "title": "September 1, 2015 - Appendix 17A DT Rates Calculations ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-19a-ebs-rate-derivation.xls?sfvrsn=28387ce1_0",
+   "title": "September 1, 2015 - Appendix 19A EBS rate derivation",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/appendix-24-tariff-calculation-workbook-electronic.xls?sfvrsn=ebfd3c53_0",
+   "title": "September 1, 2015 - Appendix 24 Tariff Calculation Workbook ELECTRONIC",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20150911-nsp-combined-rtr-presentations.pdf?sfvrsn=1f37bbc2_0",
+   "title": "September 11, 2015 – NS Power Presentations",
+   "type": "presentation",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-ca-rtr-ir-responses.pdf?sfvrsn=c0d91119_0",
+   "title": "October 9, 2015 - NS Power Responses to CA IRs 1-32",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-eci-rtr-ir-responses.pdf?sfvrsn=64c11e4e_0",
+   "title": "October 9, 2015 - NS Power Responses to ECI IRs 1-13",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-multeese-rtr-ir-responses.pdf?sfvrsn=f602abe6_0",
+   "title": "October 9, 2015 - NS Power Responses to Multeese IRs 1-5",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/multeese-ir-03-att-1-electronic.xlsx?sfvrsn=96cb3217_0",
+   "title": "October 9, 2015 - NS Power Response to Multeese IR-3 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-nsuarb-rtr-ir-responses.pdf?sfvrsn=37f60f0c_0",
+   "title": "October 9, 2015 - NS Power Responses to NSUARB IRs 1-5",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-php-rtr-ir-response.pdf?sfvrsn=7c895ac0_0",
+   "title": "October 9, 2015 - NS Power Response to PHP IR-1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-sba-rtr-ir-responses.pdf?sfvrsn=231345a2_0",
+   "title": "October 9, 2015 - NS Power Responses to SBA IRs 1-9",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/sba-ir-08-att-1-electronic.xlsx?sfvrsn=6469e9a6_0",
+   "title": "October 9, 2015 - NS Power Response to SBA IR-8 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151009-nspi-to-uarb-sweb-rtr-ir-responses.pdf?sfvrsn=ce010ae4_0",
+   "title": "October 9, 2015 - NS Power Responses to SWEB IRs 1-7",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/sweb-ir-01-att-1-electronic.xlsx?sfvrsn=74e7368b_0",
+   "title": "October 9, 2015 - NS Power Response to SWEB IR-1 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/sweb-ir-01-att-2-electronic.xlsx?sfvrsn=b6d77fa5_0",
+   "title": "October 9, 2015 - NS Power Response to SWEB IR-1 Attachment 2 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-ca-rtr-ir-responses.pdf?sfvrsn=d69ed5dc_0",
+   "title": "November 9, 2015 - NS Power Responses to CA IRs 33-35",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/ca-ir-33-att-01-electronic.xlsx?sfvrsn=a1ab301d_0",
+   "title": "November 9, 2015 - NS Power Response to CA IR-33 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/ca-ir-34-att-1-electronic.xlsx?sfvrsn=561316bc_0",
+   "title": "November 9, 2015 - NS Power Response to CA IR-34 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-eci-rtr-ir-responses.pdf?sfvrsn=d71f52a3_0",
+   "title": "November 9, 2015 - NS Power Responses to ECI IRs 14-16",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-multeese-rtr-ir-responses.pdf?sfvrsn=855ffb2c_0",
+   "title": "November 9, 2015 - NS Power Responses to Multeese IRs 6-13",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/multeese-ir-11-att-1-electronic.xls?sfvrsn=69f707bc_0",
+   "title": "November 9, 2015 - NS Power Response to Multeese IR-11 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/multeese-ir-12-att-1-electronic.xls?sfvrsn=cf5360df_0",
+   "title": "November 9, 2015 - NS Power Response to Multeese IR-12 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-nsuarb-rtr-ir-responses.pdf?sfvrsn=43846bb3_0",
+   "title": "November 9, 2015 - NS Power Responses to NSUARB IRs 6-9",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsuarb-ir-08-att-01-electronic.xls?sfvrsn=d59b9a49_0",
+   "title": "November 9, 2015 - NS Power Response to NSUARB IR-8 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsuarb-ir-08-att-03-electronic.xls?sfvrsn=2360e0f4_0",
+   "title": "November 9, 2015 - NS Power Response to NSUARB IR-8 Attachment 3 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsuarb-ir-08-att-07-electronic.xls?sfvrsn=f9802c4f_0",
+   "title": "November 9, 2015 - NS Power Response to NSUARB IR-8 Attachment 7 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsuarb-ir-08-att-11-electronic.xlsx?sfvrsn=97a95332_0",
+   "title": "November 9, 2015 - NS Power Response to NSUARB IR-8 Attachment 11 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-php-rtr-ir-responses.pdf?sfvrsn=73ba1920_0",
+   "title": "20151109 NSPI to UARB PHP RtR IR Responses",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-sba-rtr-ir-responses.pdf?sfvrsn=3a40264e_0",
+   "title": "November 9, 2015 - NS Power Responses to SBA IRs 10-13",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151109-nspi-to-uarb-sweb-rtr-ir-responses.pdf?sfvrsn=b7ac6923_0",
+   "title": "November 9, 2015 - NS Power Responses to SWEB IRs 8-9",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/sweb-ir-09-att-1-electronic.xlsx?sfvrsn=e338f565_0",
+   "title": "November 9, 2015 - NS Power Response to SWEB IR-9 Attachment 1 ELECTRONIC",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151221-nspi-to-uarb-rtr-settlement-report.pdf?sfvrsn=1d78c0af_0",
+   "title": "December 21, 2015 - Settlement Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160108-nspi-to-uarb-rtr-rebuttal-evidence.pdf?sfvrsn=9da08d05_0",
+   "title": "January 8, 2016 - Rebuttal Evidence",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160212-nspi-to-uarb-rtr-closing-submission.pdf?sfvrsn=77fbd472_0",
+   "title": "February 12, 2016 - NS Power Closing Submission",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160226-nspi-to-uarb-rtr-reply-to-closing.pdf?sfvrsn=c9083c67_0",
+   "title": "February 26, 2016 - NS Power Reply to Closing",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160323-uarb-rtr-decision.pdf?sfvrsn=1e3c0b3e_0",
+   "title": "March 23, 2016 - Decision",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160425-nspi-to-uarb-rtr-compliance-filing.pdf?sfvrsn=37b3596f_0",
+   "title": "April 25, 2016 - Compliance Filing",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160610-uarb-rtr-code-of-conduct-order.pdf?sfvrsn=4be94756_0",
+   "title": "June 10, 2016 - Code of Conduct Order",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160610-uarb-rtr-tariffs-and-appendices-order.pdf?sfvrsn=1b5eb40b_0",
+   "title": "June 10, 2016 - Tariffs Order",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160610-uarb-rtr-regulations-order.pdf?sfvrsn=7742ca1a_0",
+   "title": "June 10, 2016 - Regulations Order",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20190101-rate-breakdown-by-customer-class-in-2019.pdf?sfvrsn=8f53c714_0",
+   "title": "please click here",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20130628_2013coss_nspower_evidence.pdf?sfvrsn=e3cb47ec_0",
+   "title": "2013 Cost of Service Study - Evidence",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20130628_2013coss_nspower_evidence494af273501a455b96ae16e9eec579af.pdf?sfvrsn=fb53446c_0",
+   "title": "2013 Cost of Service Study - Appendices A-W REDACTED",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2013coss_ca_dr-14_supplemental_reisfinalreport_redacted.pdf?sfvrsn=8e797640_0",
+   "title": "2013COSS_CA_DR-14_SUPPLEMENTAL_REISFinalReport_REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140207-2014-irp-m05522-terms-of-reference---revised-final-version-filed.pdf?sfvrsn=fbfed01d_0",
+   "title": "Terms of Reference (Approved)",
+   "type": "terms_of_reference",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140314-ns-power-irp-assumptions---draft-1.pdf?sfvrsn=db0145d3_0",
+   "title": "NS Power IRP Assumptions – Draft 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140314-nspower-to-irp-stakeholders-memo-re-analysis-plan.pdf?sfvrsn=69dad7b_0",
+   "title": "NS Power Memo - IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2014-irp-forecast-(march-14-2014).xlsx?sfvrsn=d3dae9a6_0",
+   "title": "IRP Forecast",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/draft-dsm-assumptions-march-28-for-stakeholders.pdf?sfvrsn=ce5d5f84_0",
+   "title": "Draft DSM Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140314-natural-forces-to-uarb-irp-letter-of-comment.pdf?sfvrsn=5f54d4e8_0",
+   "title": "Natural Forces Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140324-ensc-to-uarb-2014-irp-assumptions-comments.pdf?sfvrsn=50f991cc_0",
+   "title": "ENSC Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140325-nse-to-nspi-2014-irp-irp-assumptions-comments.pdf?sfvrsn=df4daeae_0",
+   "title": "NSE Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140325-sba-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=f83516cf_0",
+   "title": "SBA Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-ca-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=6b1d93d0_0",
+   "title": "CA Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-eac-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=dd7e2404_0",
+   "title": "EAC Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-ene-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=4dcde476_0",
+   "title": "ENE Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-industrial-group-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=88054052_0",
+   "title": "Industrial Group Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-nsdoe-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=9bf73875_0",
+   "title": "NSDOE Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-php-to-nspi-2014-irp-assumptions-comments.pdf?sfvrsn=aa4681b6_0",
+   "title": "PHP Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140326-scotian-windfields-comments-on-assumptions-and-20140326-scotianwindfields-inc-att-synapsereport-2013-11-0-2013-carbon-forecast-13-098.pdf?sfvrsn=2ce5d681_0",
+   "title": "Scotian WindFields Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140403-ca-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=6a3b326e_0",
+   "title": "CA Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140404-industrial-group-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=ba537f69_0",
+   "title": "Industrial Group Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140407-ene-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=75054ae0_0",
+   "title": "ENE Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140407-ensc-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=514ec1b1_0",
+   "title": "ENSC Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140407-nsdoe-to-nspi-2014-irp-dsm-assumptions-comments2ff708f519024d83b6bb8ed5815f5f7d.pdf?sfvrsn=8b6ecb99_0",
+   "title": "NSDOE Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140407-php-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=f7935b54_0",
+   "title": "PHP Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140407-sba-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=b370ae72_0",
+   "title": "SBA Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140410-eac-to-nspi-2014-irp-dsm-assumptions-comments.pdf?sfvrsn=bc8822ac_0",
+   "title": "EAC Comments on DSM/DR Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/industrial-group-request.pdf?sfvrsn=814657d7_0",
+   "title": "Industrial Group Request",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/larry-hughes-request.pdf?sfvrsn=1e6f9294_0",
+   "title": "Larry Hughes Request",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsdoe-request.pdf?sfvrsn=674a6755_0",
+   "title": "NSDOE Request",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140411-ns-power-irp-assumptions---final.pdf?sfvrsn=3db1dfc9_0",
+   "title": "NS Power IRP Assumptions – Final",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140411-ns-power-to-irp-stakeholders-memo-re-response-to-stakeholder-input.pdf?sfvrsn=51322f33_0",
+   "title": "NS Power Memo – Response to Stakeholder Input",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140411-ns-power-responses-to-stakeholder-comments-on-assumptions.pdf?sfvrsn=11376f94_0",
+   "title": "NS Power Responses to Stakeholder Comments on Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140423-wind-capacity-value-assumptions.pdf?sfvrsn=2c12f8ab_0",
+   "title": "NS Power IRP Assumptions - Wind Capacity Value",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140501-variable-generation-integration-costs-assumptions.pdf?sfvrsn=1ff1641c_0",
+   "title": "20140501 Variable Generation Integration Costs Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140507-industrial-group-to-nspi-2014-irp-final-assumptions-comments.pdf?sfvrsn=c371c788_0",
+   "title": "Industrial Group Comments on Final Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140509-industrial-group-to-nspi-2014-irp-final-assumptions-comments.pdf?sfvrsn=ab8d0707_0",
+   "title": "Industrial Group Comments on Final Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140509-php-to-nspi-2014-irp-final-assumptions-comments.pdf?sfvrsn=a06190c7_0",
+   "title": "PHP Comments on Final Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140509-sba-to-nspi-2014-irp-final-assumptions-comments.pdf?sfvrsn=7e274abb_0",
+   "title": "SBA Comments on Final Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140509-scotian-windfields-to-nspi-2014-irp-final-assumptions-comments.pdf?sfvrsn=70402851_0",
+   "title": "Scotian WindFields Comments on Final Assumptions",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140515-industrial-group-request.pdf?sfvrsn=3a83d083_0",
+   "title": "Response to Industrial Group Request (May 1)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140530-industrial-group-request-(may-7-letter).pdf?sfvrsn=6d8d061d_0",
+   "title": "Response to Industrial Group Request (May 7)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140530-industrial-group-request-(may-9-letter).pdf?sfvrsn=12a622de_0",
+   "title": "Response to Industrial Group Request (May 9)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140530-sba-request-(may-9-letter).pdf?sfvrsn=8222b4b3_0",
+   "title": "Response to SBA Request (May 9)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140605-ns-power-memo-to-irp-stakeholders-re-status-update.pdf?sfvrsn=61d09fac_0",
+   "title": "NS Power Memo to IRP Stakeholders: Status Update",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140605-attachment-1---20140605-draft-resource-plans.pdf?sfvrsn=33e166f6_0",
+   "title": "Attachment 1 - 20140605 Draft Resource Plans",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140605-attachment-2---20140604-irp-status-update.pdf?sfvrsn=6a1b62bc_0",
+   "title": "Attachment 2 - 20140604 IRP Status Update",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140625-ns-power-irp-technical-conference-material.pdf?sfvrsn=3d2aab39_0",
+   "title": "NS Power IRP Technical Conference Material",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140625-avoided-cost-of-dsm-discussion.pdf?sfvrsn=71798bb8_0",
+   "title": "Avoided Cost of DSM Discussion",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140625-irp-technical-conference-acronyms-list.pdf?sfvrsn=6b5a7b12_0",
+   "title": "IRP Technical Conference Acronyms",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140730-ns-power-memo-to-irp-stakeholders-re-status-update.pdf?sfvrsn=472e06d7_0",
+   "title": "NS Power Memo to IRP Stakeholders: Status Update",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140730-attachment-1---crp-sensitivity-matrix.pdf?sfvrsn=664ec6d2_0",
+   "title": "Attachment 1 - CRP Sensitivity Matrix",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140730-attachment-2---stakeholder-comment-responses.pdf?sfvrsn=424679f5_0",
+   "title": "Attachment 2 - Stakeholder Comment Responses",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140730-attachment-3---crp-retirement-levels.pdf?sfvrsn=87b4a580_0",
+   "title": "Attachment 3 - CRP Retirement Levels",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140912-ns-power-irp-technical-conference---analysis-results.pdf?sfvrsn=ce4decb4_0",
+   "title": "NS Power IRP Technical Conference - Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140912-ns-power-irp-technical-conference-appendix---draft-analysis---detailed-crp-results.pdf?sfvrsn=e022ca22_0",
+   "title": "NS Power IRP Technical Conference Appendix - Draft Analysis - Detailed CRP Results",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140708-ca-(chernick)-comments-on-irp-analysis-plan.pdf?sfvrsn=ba2924c8_0",
+   "title": "CA (Chernick) Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140708-ca-(mahody)-comments-on-irp-analysis-plan.pdf?sfvrsn=3a72a038_0",
+   "title": "CA (Mahody) Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140708-nsdoe-comments-on-irp-analysis-plan.pdf?sfvrsn=37b7b8c4_0",
+   "title": "NSDOE Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-eac-comments-on-irp-analysis-plan.pdf?sfvrsn=234449fe_0",
+   "title": "EAC Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-ensc-comments-on-irp-analysis-plan.pdf?sfvrsn=68adbfd3_0",
+   "title": "ENSC Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-industrial-group-comments-on-irp-analysis-plan.pdf?sfvrsn=5d55671d_0",
+   "title": "Industrial Group Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-nse-comments-on-irp-analysis-plan.pdf?sfvrsn=b6cbf8cf_0",
+   "title": "NSE Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-php-comments-on-irp-analysis-plan.pdf?sfvrsn=f6f25b10_0",
+   "title": "PHP Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-sba-comments-on-irp-analysis-plan.pdf?sfvrsn=43ad5d6_0",
+   "title": "SBA Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140709-scotian-windfields-comments-on-irp-analysis-plan.pdf?sfvrsn=d6a85c47_0",
+   "title": "Scotian WindFields Comments on IRP Analysis Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-ca-(chernick)-comments-on-irp-analysis-results.pdf?sfvrsn=5f0f18b1_0",
+   "title": "CA (Chernick) Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-eac-comments-on-irp-analysis-results.pdf?sfvrsn=34b1624e_0",
+   "title": "EAC Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-ensc-comments-on-irp-analysis-results.pdf?sfvrsn=246591e9_0",
+   "title": "ENSC Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-industrial-group-comments-on-irp-analysis-results.pdf?sfvrsn=63a2056d_0",
+   "title": "Industrial Group Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-php-comments-on-irp-analysis-results.pdf?sfvrsn=53895153_0",
+   "title": "PHP Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-sba-comments-on-irp-analysis-results.pdf?sfvrsn=3f16323e_0",
+   "title": "SBA Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140919-scotian-windfields-comments-on-irp-analysis-results.pdf?sfvrsn=bd645da7_0",
+   "title": "Scotian Windfields Comments on IRP Analysis Results",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20140930-2014-irp-draft-report(1).pdf?sfvrsn=9b32c4df_0",
+   "title": "2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141003-synapse-(facilitator---hornby)-comments-2014-irp-draft-report.pdf?sfvrsn=c4e737c6_0",
+   "title": "Synapse (Facilitator - Hornby) Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141003-synapse-comments-2014-irp-draft-report.pdf?sfvrsn=15c50681_0",
+   "title": "Synapse Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-ca-comments-2014-irp-draft-report.pdf?sfvrsn=431eede4_0",
+   "title": "CA Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-cme-comments-2014-irp-draft-report.pdf?sfvrsn=60ebef07_0",
+   "title": "CME Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-eac-comments-2014-irp-draft-report.pdf?sfvrsn=3b0b5b4f_0",
+   "title": "EAC Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-ensc-comments-2014-irp-draft-report.pdf?sfvrsn=5314689d_0",
+   "title": "ENSC Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-industrial-group-comments-2014-irp-draft-report.pdf?sfvrsn=1ae215ca_0",
+   "title": "Industrial Group Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-nsdoe-comments-2014-irp-draft-report.pdf?sfvrsn=b4324f37_0",
+   "title": "NSDOE Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-php-comments-2014-irp-draft-report.pdf?sfvrsn=12962f9a_0",
+   "title": "PHP Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141007-sba-comments-2014-irp-draft-report.pdf?sfvrsn=939010fd_0",
+   "title": "SBA Comments on 2014 IRP DRAFT Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141015-nspi-to-uarb-final-irp-report.pdf?sfvrsn=183131ba_0",
+   "title": "October 15, 2014 – 2014 IRP Final Report - Cover Letter to UARB",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141015-2014-irp-final-report.pdf?sfvrsn=1d14dc1d_0",
+   "title": "October 15, 2014 – 2014 IRP Final Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2014-irp-final-report---redline.pdf?sfvrsn=1690af83_0",
+   "title": "October 15, 2014 – 2014 IRP Final Report - REDLINE",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/irpreportvolume1july2007.pdf?sfvrsn=3252add_0",
+   "title": "Vol 1",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/irpreportfinalintervenorcommentsvolume2redacted20070726.pdf?sfvrsn=3b771a64_0",
+   "title": "Vol 2",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/irpreportvolume3july2007.pdf?sfvrsn=cd8265a4_0",
+   "title": "Vol 3",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2009-irp-update---final-report-combined-redacted.pdf?sfvrsn=265cf632_0",
+   "title": "2009 IRP Update Final Report",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20161114-nspi-to-uarb-2017-ace-plan-cover-letter.pdf?sfvrsn=51cf0a4c_0",
+   "title": "NS Power to UARB 2017 ACE Plan Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20161114-2017-ace-plan-red.pdf?sfvrsn=3188a1e6_0",
+   "title": "NS Power 2017 ACE Plan REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20161114-2017-ace-plan---confidentiality-matrix.pdf?sfvrsn=d46edd52_0",
+   "title": "NS Power 2017 ACE Plan Confidentiality Matrix",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20161116-2017-ace-plan-confidential-undertaking.pdf?sfvrsn=ac8d2a5c_0",
+   "title": "NS Power 2017 ACE Plan Confidentiality Undertaking",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20170105-nspi-to-ca-ir-responses-1-38-redacted.pdf?sfvrsn=fb875bf1_0",
+   "title": "NSPI to CA IR Responses 1-38 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20170105-nspi-to-nsuarb-ir-responses-1-79-redacted.pdf?sfvrsn=251ff082_0",
+   "title": "NSPI to NSUARB IR Responses 1-79 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20170105-nspi-to-sba-ir-responses-1---47-redacted.pdf?sfvrsn=fb7611d3_0",
+   "title": "NSPI to SBA IR Responses 1 - 47 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151112-nspi-to-uarb-2016-ace-plan-cover-letter.pdf?sfvrsn=be2f37ab_0",
+   "title": "NS Power to UARB 2016 ACE Plan Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151112-2016-ace-plan-redacted.pdf?sfvrsn=179e8e8d_0",
+   "title": "NS Power 2016 ACE Plan REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151112-2016-ace-plan---confidential-undertaking.pdf?sfvrsn=ae886fba_0",
+   "title": "NS Power 2016 ACE Plan Confidentiality Undertaking",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20151209-nspi-to-uarb-2016-ace-plan-confidentiality-justification-cover-letter.pdf?sfvrsn=aa2df4e3_0",
+   "title": "NS Power to UARB 2016 ACE Plan Confidentiality Justification Revised",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2016-ace-plan---confidentiality-matrix-vendor-responses-(internal)-revised-20151209.pdf?sfvrsn=9477c1a2_0",
+   "title": "NS Power 2016 ACE Confidentiality Matrix",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/t03-46587-revised-redacted.pdf?sfvrsn=bbf7771c_0",
+   "title": "NS Power 2016 ACE T03-46587 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160122-nspi-to-uarb-2016-ace-plan-ir-responses.pdf?sfvrsn=e0c31b5f_0",
+   "title": "NS Power to UARB - Cover Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160122-nspi-responses-to-ca-irs-1-20-redacted.pdf?sfvrsn=2a6ab792_0",
+   "title": "20160122 NSPI Responses to CA IRs 1-20 REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160122-nspi-responses-to-nsuarb-irs-1-79-redacted.pdf?sfvrsn=95933c18_0",
+   "title": "NS Power Responses to NSUARB IRs 1-79 (REDACTED)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20160122-nspi-responses-to-sba-irs-1-50-redacted.pdf?sfvrsn=dbf99256_0",
+   "title": "NS Power Responses to SBA IRs 1-50 (REDACTED)",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141106-nspi-to-uarb-2015-ace-plan-letter.pdf?sfvrsn=6ecd3c92_0",
+   "title": "NS Power to UARB 2015 ACE Plan Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20141117-ns-power-2015-ace-plan-redacted.pdf?sfvrsn=49a8feec_0",
+   "title": "NS Power 2015 ACE Plan REDACTED",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2010-02-26-nspi(uarb)-2011-dsm-evidence-with-app.pdf?sfvrsn=d175ac64_0",
+   "title": "2011 Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2009-05-11-nspi-dsm-evidence-w-revised-appendix-f.pdf?sfvrsn=565b6b32_0",
+   "title": "2010 Plan",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2008-01-31-nspievidence.pdf?sfvrsn=cbea33a9_0",
+   "title": "2009 Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2008-01-31-collaborativereport---lettertonmcneilfilingdsmcollaborativereport.pdf?sfvrsn=28feec47_0",
+   "title": "Cover Letter",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2008-01-31-collaborativereport---volume-i.pdf?sfvrsn=e4cc215e_0",
+   "title": "Volume I",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2008-01-31-collaborativereport---volume-ii.pdf?sfvrsn=69c41cda_0",
+   "title": "Volume II",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsm-2008-01-31-collaborativereport---volume-iii.pdf?sfvrsn=19b581bf_0",
+   "title": "Volume III",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/regulations/regulatory-initiatives-archive"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/20241220-nspi-to-nsuarb-five-year-reliability-plan.pdf?sfvrsn=845d77a2_9",
+   "title": "Reliability Plan",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/how-our-business-works"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/2026-2027-gra-01-direct-evidence-conf-ao1.pdf?sfvrsn=298b02da_1",
+   "title": "View the General Rate Application filing here >",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/how-our-business-works"
+  },
+  {
+   "url": "https://nspower-stage-ca.aws.silvertech.net/docs/default-source/pdf-to-upload/nspower-demand-meters508da5f0b0334e0d9d3fc2f1e20765ec.pdf?sfvrsn=c56a28af_7",
+   "title": ".st0 { fill: #16529e; } Download Demand Billing Guide",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/demand-billing"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/section-73-pua-application---updated-2022-04-22.pdf?sfvrsn=aec32769_10",
+   "title": "COMPLETE THE Charitable Organization Application Form",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/business-rates"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/regulatory/tariff-book-2026.pdf",
+   "title": "Nova Scotia Power Tariffs",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/business-rates"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/nspowerregulations.pdf",
+   "title": "Nova Scotia Power Regulations",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/business-rates"
+  },
+  {
+   "url": "https://nspower.ca/docs/default-source/pdf-to-upload/2026-rate-breakdown-by-cost-of-service.pdf",
+   "title": "Rate Breakdown by Cost of Service",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/business-rates"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/permit-application---2014.pdf?sfvrsn=eeeff57c_0",
+   "title": "NSP_Site_Icon_XXXXXXXX_Blue_50x50_11 Request a Permit",
+   "type": "permit_approval",
+   "page": "https://www.nspower.ca/your-business/building-renovating/building-and-renovating-101"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/2020-acoc-and-board-order-m09031.pdf?sfvrsn=ea49d6de_6",
+   "title": "Affiliate Code of Conduct",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/who-we-are"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/librariesprovider3/default-document-library/2021-emera-code-of-conduct---external.pdf?sfvrsn=106fc032_2",
+   "title": "Emera Code of Conduct",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/who-we-are"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/performance-standards-report-appendices_2024.pdf?sfvrsn=23edc1df_1",
+   "title": "performance-standards-report-appendices_2024.pdf",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/performance-standards"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/performance-standards-report-appendices_2025.pdf?sfvrsn=bf6badf7_1",
+   "title": "Performance Standards Report & Appendices_2025",
+   "type": "technical",
+   "page": "https://www.nspower.ca/about-us/performance-standards"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/performance-standards-report_2023.pdf?sfvrsn=47c03d9_2",
+   "title": "Performance Standards Report Card_2023",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/performance-standards"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/performance-standards-report_2022.pdf?sfvrsn=4b083c40_2",
+   "title": "Performance Standards Report Card_2022",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/performance-standards"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/service-provider-application-2026.pdf?sfvrsn=dfb95cb5_9",
+   "title": "Service Provider Application 2026",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/service-provider"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/sp-wi-001-updated-april-2024.pdf?sfvrsn=d6e1247c_1",
+   "title": "Safe Work Instruction and Risk Assessment Form",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/your-business/service-provider"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nsp-doc-sp48f5fdfc9-638d-492a-afd3-56e6e6018fb7.pdf?sfvrsn=bad9f5a8_1",
+   "title": "Skill and Safety Information",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/service-provider"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/salisbury-use-care-of-rubber-gloves.pdf?Status=Master&sfvrsn=b653c6b4_3",
+   "title": "Salisbury Use & Care of Rubber Gloves",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/service-provider"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/petc-new-customer-address-form.pdf?Status=Master&sfvrsn=c595d6d3_3",
+   "title": "PETC New Customer Address Form",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/service-provider"
+  },
+  {
+   "url": "https://nspower.ca/docs/default-source/pdf-to-upload/king-edgehill-school.pdf",
+   "title": "Independent school sees savings with new energy solutions Kings-Edgehill School’s administration building is over 100 years old and as with similar buildings across Nova Scotia, the age of this buildi",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/case-studies"
+  },
+  {
+   "url": "https://nspower.ca/docs/default-source/pdf-to-upload/sante-centre.pdf",
+   "title": "Building owners target energy efficiency Santé Centre is a two-story, 20,265 square foot commercial multitenant wellness centre, offering a variety of health, fitness, and health food services to cust",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/case-studies"
+  },
+  {
+   "url": "https://nspower.ca/docs/default-source/pdf-to-upload/trinity-united-church.pdf",
+   "title": "Implementing an efficient solution to gain energy savings Trinity United Church is a large, landmark brick building in downtown New Glasgow was spending an average of $37k/year in energy costs. The ex",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/case-studies"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/digby-fire-station.pdf?sfvrsn=34c1e5d_1",
+   "title": "Minimizing energy costs for the Town of Digby’s Fire Station The Town of Digby has been upgrading many of their buildings to improve energy efficiency and convert fossil fuel-powered energy systems. T",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/case-studies"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/main-street-station.pdf?sfvrsn=a9be401c_1",
+   "title": "Historic building invests in modern energy technology and gains cost efficiencies Built in 1930, the Main Street Station is a well-known historic landmark in Kentville. Today, it houses businesses and",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/case-studies"
+  },
+  {
+   "url": "https://nslegislature.ca/sites/default/files/legc/statutes/agriculture%20and%20marketing.pdf",
+   "title": "Agriculture and Marketing Act",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://nslegislature.ca/sites/default/files/legc/statutes/fisheries%20and%20coastal%20resources.pdf",
+   "title": "Fisheries and Coastal Resources Act",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/commercial-net-metering-program-participant-agreement.pdf?sfvrsn=a2c019b5_1",
+   "title": "Commercial Net Metering Participant Agreement",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/commercial-net-metering-program-rec-registration-form.pdf?sfvrsn=c1a41e64_1",
+   "title": "Commercial Net Metering REC Registration Form",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/commercial-net-metering-program-terms-and-conditions.pdf?sfvrsn=f04febd9_1",
+   "title": "Commercial Net Metering Program Terms and Conditions",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dsir---100-kw-and-below---.pdf?sfvrsn=1f13667a_6&_gl=1*1ann4id*_gcl_au*MTE5Njk2MTk5NC4xNzQxNzk4MjMz",
+   "title": "Class 1 Interconnection Requirements",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/class-1---interconnection-request-and-equipment-information-form---solar-installations---icr-s-v1.0.pdf?sfvrsn=b114a029_1",
+   "title": "Interconnection Request and Equipment Information Form",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/class-1---interconnection-request-and-equipment-information-form---other-installations---icr-o-v1.0.pdf?sfvrsn=b2a587a2_1",
+   "title": "Interconnection Request and Equipment Information Form",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://nslegislature.ca/sites/default/files/legc/statutes/electricity.pdf",
+   "title": "Electricity Act",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/installer_guides_commercial_net_metering_nov29.pdf?sfvrsn=36baa8b3_1",
+   "title": "Installer Guide - Class 1 Commercial Net Metering",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/b-64-200-solar-photovoltaic-installations01a8d4bd28084115ba403a039f536743.pdf?sfvrsn=e7aa3d71_5",
+   "title": "B-64-200",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/interconnection-requirements-generating-facilities-above-100kw.pdf?sfvrsn=fc0424ee_20",
+   "title": "Class 2 Interconnection Requirements",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/overviewdgipprocess.pdf?sfvrsn=b51c3141_0",
+   "title": "Overview of Distribution Generator Interconnection Process",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/dgip.pdf?sfvrsn=290d4fa0_11",
+   "title": "Distribution Generator Interconnection Procedures",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/pre-application-assessment-process.pdf?sfvrsn=b01b6142_7",
+   "title": "Pre-Application Assessment Process",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/pre-application-assessment-form.pdf?sfvrsn=56d28b8a_7",
+   "title": "Pre-Application Form",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/class-2---commercial-net-metering-program-application.pdf?sfvrsn=58945791_1",
+   "title": "Class 2 Commercial Net Metering Program Application",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/save-money-energy/make-own-energy/commercial-net-metering"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/utility-services-requirements-2026.pdf",
+   "title": "Utility Services Requirements",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/building-renovating/electrical-inspections"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/regulation-7-2-clean-version.pdf",
+   "title": "Regulation 7.2 - Approved Fees",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/building-renovating/electrical-inspections"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/nova-scotia-power-metering-standards-2018.pdf",
+   "title": "Nova Scotia Power Metering Standards",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-business/building-renovating/electrical-inspections"
+  },
+  {
+   "url": "https://nspower.ca/docs/default-source/pdf-to-upload/b-2-008-1_revised_electrical_inspection_fees-2014.pdf?sfvrsn=99278c28_0",
+   "title": "Bulletin B-2-008",
+   "type": "newsletter",
+   "page": "https://www.nspower.ca/your-business/building-renovating/electrical-inspections"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/bill-inserts/jc0446_storm-preparednesschecklist.pdf?sfvrsn=b36baa13_11",
+   "title": "storm safety and preparedness checklist",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/articles/details/articles/2023/02/13/how-we-plan-and-stay-prepared-for-storms"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/default-document-library/nspi-purchase-order-terms-conditions.pdf?sfvrsn=ff901314_1",
+   "title": "A copy of Nova Scotia Power’s Purchase Order Terms and Conditions are found here",
+   "type": "other",
+   "page": "https://www.nspower.ca/about-us/who-we-are/suppliers"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/grid-scale-battery---2025-year-jan-summary-report.pdf?sfvrsn=2ac26f5e_1",
+   "title": "Grid-Scale Battery - 2025 Year Review + January Summary Report",
+   "type": "other",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/2024-open-house-story-boards.pdf?sfvrsn=ebb458d2_1",
+   "title": "2024 Open House Story Boards",
+   "type": "open_house",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/grid-scale-battery---master-stakeholder-slide-deck-2025.pdf?sfvrsn=612ca626_1",
+   "title": "Grid-Scale Battery - Master Stakeholder Slide Deck 2025",
+   "type": "presentation",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/waverley-open-house-invite.pdf?sfvrsn=1cfee725_1",
+   "title": "Waverley Open House Invite",
+   "type": "open_house",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/grid-scale-battery-info-sheet.pdf?sfvrsn=3efb022b_1",
+   "title": "Grid-Scale Battery Info Sheet",
+   "type": "other",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/grid-scale-battery-materials/bridgewater-open-house-invite.pdf?sfvrsn=6ec7339a_1",
+   "title": "Bridgewater Open House Invite",
+   "type": "open_house",
+   "page": "https://www.nspower.ca/cleanandgreen/innovation/grid-scale-batteries"
+  },
+  {
+   "url": "https://nslegislature.ca/sites/default/files/legc/PDFs/annual%20statutes/2022%20Spring/c012.pdf",
+   "title": "Bill 145",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-home/save-money-energy/make-own-energy/self-generating-option"
+  },
+  {
+   "url": "https://www.nspower.ca/docs/default-source/pdf-to-upload/installer_guides_self-gen_nov24.pdf?sfvrsn=660e3422_1",
+   "title": "Installer Guide",
+   "type": "other",
+   "page": "https://www.nspower.ca/your-home/save-money-energy/make-own-energy/self-generating-option"
+  }
+ ],
+ "doc_types": {
+  "other": 418,
+  "permit_approval": 4,
+  "closure": 1,
+  "technical": 18,
+  "presentation": 2,
+  "terms_of_reference": 1,
+  "newsletter": 7,
+  "open_house": 3
+ },
+ "crawled_at": "2026-09-06T08:03:35Z",
+ "name": "Nova Scotia Power",
+ "via_browser": false
+}

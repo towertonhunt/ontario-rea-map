@@ -24,11 +24,19 @@
   "docs_path": "data/docs/proponent/library-alamos-gold.json"
  },
  {
-  "key": "altalink management",
+  "key": "altalink",
   "name": "AltaLink: EA document library",
   "proponent": "AltaLink",
   "website": "https://www.altalink.ca/",
   "doc_count": 205,
+  "docs_path": "data/docs/proponent/library-altalink.json"
+ },
+ {
+  "key": "altalink management",
+  "name": "AltaLink: EA document library",
+  "proponent": "AltaLink",
+  "website": "https://www.altalink.ca/",
+  "doc_count": 201,
   "docs_path": "data/docs/proponent/library-altalink-management.json"
  },
  {
@@ -212,7 +220,7 @@
   "name": "Hydro One: EA document library",
   "proponent": "Hydro One",
   "website": "https://www.hydroone.com/",
-  "doc_count": 1073,
+  "doc_count": 1071,
   "docs_path": "data/docs/proponent/library-hydro-one.json"
  },
  {
@@ -332,7 +340,7 @@
   "name": "Nova Scotia Power: EA document library",
   "proponent": "Nova Scotia Power",
   "website": "https://www.nspower.ca/",
-  "doc_count": 102,
+  "doc_count": 117,
   "docs_path": "data/docs/proponent/library-nova-scotia-power.json"
  },
  {
