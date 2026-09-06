@@ -133,11 +133,11 @@
   {
    "name": "Detour Lake Contingency Power Project (ON provincial EA)",
    "variants": [
-    "detour lake contingency power"
+    "detour lake mine (incl"
    ],
    "proponent": "Detour Gold",
    "expect": "present",
-   "why": "user-reported 2026-09-02: ON provincial EA had no proponent/status/docs; fixed via fetch_on_ea_pages.py"
+   "why": "user-reported 2026-09-02: ON provincial EA had no proponent/status/docs; fixed via fetch_on_ea_pages.py; 2026-09-06 folded into the consolidated on_class_ea point as a section"
   },
   {
    "name": "West Detour Project (ON Class EA / ESR, 2017)",
