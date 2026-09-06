@@ -59,6 +59,11 @@ DETOUR_INCLUDE = {
     '2020 WDP Environmental Study Report Addendum': ('west-detour-esr', 'West Detour Project Environmental Study Report (2019)'),
     'Basic Impact Assessment': ('west-detour-esr', 'West Detour Project Environmental Study Report (2019)'),
 }
+# Never publish: review comments, responses, memos, notes -- anything that is
+# not the original report. Moose Cree First Nation material in particular.
+DETOUR_EXCLUDE = re.compile(r'Federal[_ ]Review|MCFN|Moose[_ ]Cree|Comment|Response|Consultation|'
+                            r'SEA[_ ]review|\bMEM\b|\bNOTE\b|\bTAB\b|- Copy', re.I)
+
 DETOUR_ROOT_FILES = {  # loose files at the folder root that are public record
     'MNR_West Detour Project-Statement of Completion_March_23_2021.pdf': 'west-detour-esr',
 }
@@ -117,6 +122,8 @@ def detour():
             continue
         for p in sorted(glob.glob(os.path.join(d, '**', '*.pdf'), recursive=True)):
             base = os.path.basename(p)
+            if DETOUR_EXCLUDE.search(base):
+                continue
             groups.setdefault(s, {'name': name, 'docs': []})['docs'].append({
                 'title': os.path.splitext(base)[0].replace('_', ' '), 'url': None,
                 'category': sub, 'key': f'classea/detour-gold/{s}/{safe(sub)}/{safe(base)}',
