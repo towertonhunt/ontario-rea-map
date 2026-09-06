@@ -198,7 +198,10 @@ def main():
             if not rec.get('archive_url'):
                 continue
             try:
-                req = urllib.request.Request(rec['archive_url'], method='HEAD')
+                # the r2.dev public host answers 403 to Python's default UA
+                req = urllib.request.Request(rec['archive_url'], method='HEAD', headers={
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                                  'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'})
                 urllib.request.urlopen(req, timeout=30)
             except Exception as e:                                   # noqa: BLE001
                 if 'HTTP Error 404' in str(e):
