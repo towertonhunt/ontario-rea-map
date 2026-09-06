@@ -5,7 +5,9 @@ name: Archive documents to R2
 # data/raw/archive_manifest.json.gz; each run works for ~5h then commits the
 # manifest. Federal (IAAC) is throttled hard by the host, so the full
 # backfill takes a couple of weeks of these runs; provincial sources finish
-# in days. After the backfill it just keeps up with new filings.
+# in days. After the backfill it just keeps up with new filings. Each run
+# also dates up to 1,200 already-archived federal documents from their
+# landing pages (--meta-backfill) until none are left.
 #
 # Inputs (workflow_dispatch):
 #   smoke  - upload one tiny object and read it back through the public URL
@@ -74,11 +76,18 @@ jobs:
       - name: Archive documents
         if: ${{ !inputs.smoke }}
         run: |
-          ARGS="--budget 18000"
+          ARGS="--budget 16500"
           [ -n "${{ inputs.only }}" ] && ARGS="$ARGS --only ${{ inputs.only }}"
           [ -n "${{ inputs.limit }}" ] && ARGS="$ARGS --limit ${{ inputs.limit }}"
           [ "${{ inputs.reconcile }}" = "true" ] && ARGS="$ARGS --reconcile"
           python3 scripts/archive_docs.py $ARGS
+
+      # Federal records archived before the lane kept the landing page's
+      # Document Date: re-read the page (HTML only) for up to 1,200 of them
+      # per run, newest first, so catalogues can date same-titled documents.
+      - name: Backfill federal document dates
+        if: ${{ !inputs.smoke && inputs.only == '' }}
+        run: python3 scripts/archive_docs.py --meta-backfill 1200 --budget 1500
 
       - name: Commit (merge manifest onto current main, never rebase)
         if: ${{ !inputs.smoke }}

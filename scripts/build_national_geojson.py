@@ -430,12 +430,37 @@ print(f'ontario provincial EA (no coords yet): {n_onp}')
 classea_path = os.path.join(RAW, 'classea_projects.json')
 n_classea = 0
 if os.path.exists(classea_path):
-    for rec in json.load(open(classea_path)):
+    classea_recs = json.load(open(classea_path))
+    # A consolidated Class EA point may absorb a registry record for the same
+    # project: its documents become a section, and the separate pin is dropped.
+    merged_registry = {}
+    for rec in classea_recs:
+        for m in rec.get('merge_registry') or []:
+            merged_registry[(m['source'], m['project'])] = (rec, m['section'])
+    for (src, pid), (rec, section) in merged_registry.items():
+        for f in list(features):
+            p = f['properties']
+            if p.get('source') == src and (p.get('docs_path') or '').endswith(f'/{pid}.json'):
+                try:
+                    reg_docs = json.load(open(os.path.join(ROOT, p['docs_path'])))['docs']
+                except (OSError, ValueError):
+                    reg_docs = []
+                cpath = os.path.join(ROOT, rec['docs_path'])
+                cat = json.load(open(cpath))
+                have = {d.get('url') for d in cat['docs']}
+                added = [dict(d, category=section) for d in reg_docs if d.get('url') not in have]
+                if added:
+                    cat['docs'] += added
+                    json.dump(cat, open(cpath, 'w'), ensure_ascii=False)
+                rec['doc_count'] = len(cat['docs'])
+                rec.setdefault('registry_ids', []).append(f'{src}:{pid}')
+                features.remove(f)
+    for rec in classea_recs:
         geom = None
         if rec.get('coords'):
             lon, lat = rec['coords']
             geom = {'type': 'Point', 'coordinates': [lon, lat]}
-        props = {k: v for k, v in rec.items() if k not in ('coords', 'slug')}
+        props = {k: v for k, v in rec.items() if k not in ('coords', 'slug', 'merge_registry')}
         props.setdefault('category', 'energy_other' if 'ransmission' in (rec.get('type') or '')
                          else 'mining' if rec.get('type') == 'Mining' else 'other')
         add({'type': 'Feature', 'geometry': geom, 'properties': props})
@@ -468,6 +493,14 @@ if os.path.exists(qc_path):
     cpath = os.path.join(RAW, 'qc_coords.json')
     if os.path.exists(cpath):
         coords = json.load(open(cpath))
+    # REE publishes no documents; the record is the BAPE dossier that
+    # scripts/link_qc_bape.py matched by name (data/raw/qc_bape_links.json)
+    bape_links = {}
+    lpath = os.path.join(RAW, 'qc_bape_links.json')
+    if os.path.exists(lpath):
+        bape_links = json.load(open(lpath))
+    qc_docdir = os.path.join(ROOT, 'data', 'docs', 'qc')
+    n_qc_linked = 0
     h = open(qc_path, encoding='utf-8', errors='replace').read()
     rows = re.findall(r'<tr[^>]*>(.*?)</tr>', h, re.S)
     for r in rows[1:]:
@@ -499,9 +532,22 @@ if os.path.exists(qc_path):
             'registry_url': ('https://www.ree.environnement.gouv.qc.ca/projet.asp?no_dossier=' + dossier)
                             if dossier else None,
         }
+        slug = bape_links.get(dossier)
+        if slug:
+            cpath = os.path.join(qc_docdir, f'{slug[:60]}.json')
+            if os.path.exists(cpath):
+                try:
+                    n_docs = len(json.load(open(cpath)).get('docs') or [])
+                except (ValueError, OSError):
+                    n_docs = 0
+                if n_docs:
+                    props['docs_path'] = f'data/docs/qc/{slug[:60]}.json'
+                    props['doc_count'] = n_docs
+                    props['bape_url'] = f'https://www.bape.gouv.qc.ca/fr/dossiers/{slug}/'
+                    n_qc_linked += 1
         add({'type': 'Feature', 'geometry': geom, 'properties': props})
         n_qc += 1
-print(f'quebec: {n_qc}')
+print(f'quebec: {n_qc} ({n_qc_linked} linked to a BAPE dossier)')
 
 # ── Nova Scotia (no coordinates in source; parsed for list/search) ───
 ns_path = os.path.join(RAW, 'ns_ea_projects.html')

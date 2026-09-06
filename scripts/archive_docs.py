@@ -145,6 +145,25 @@ def fetch(url, limiter, timeout=120):
         limiter.release(host)
 
 
+FED_DATE_RX = re.compile(r'<meta\s+name="Document Date"\s+content="(\d{4}-\d{2}-\d{2})', re.I)
+FED_REF_RX = re.compile(r'Document reference number:\s*</strong>\s*([^<\s][^<]*?)\s*<', re.I)
+
+
+def federal_meta(html):
+    """The registry's document landing page carries the document's own
+    date (<meta name="Document Date">) and its reference number. The
+    catalogues have neither, and the date is what tells "Appendix A" from
+    "Appendix A" - so keep both on the manifest record."""
+    out = {}
+    m = FED_DATE_RX.search(html)
+    if m:
+        out['doc_date'] = m.group(1)
+    m = FED_REF_RX.search(html)
+    if m:
+        out['doc_ref'] = m.group(1).strip()[:40]
+    return out
+
+
 def resolve_federal(url, html):
     """Landing page -> (file url or None). None means HTML-only notice."""
     m = FED_FILE_RX.search(html)
@@ -254,11 +273,17 @@ def merge_manifests(base, other):
         cur = base.get(url)
         if cur is None:
             base[url] = rec
-        elif rec.get('key') and (not cur.get('key')
-                                 or (rec.get('fetched_at', '') > cur.get('fetched_at', ''))):
+            continue
+        if rec.get('key') and (not cur.get('key')
+                               or (rec.get('fetched_at', '') > cur.get('fetched_at', ''))):
             base[url] = rec
         elif not rec.get('key') and not cur.get('key'):
             cur['fails'] = max(cur.get('fails', 0), rec.get('fails', 0))
+        # document metadata is filled in by a later pass than the upload
+        # (see --meta-backfill); it must survive whichever record wins
+        for f in ('doc_date', 'doc_ref'):
+            if not base[url].get(f) and (rec.get(f) or cur.get(f)):
+                base[url][f] = rec.get(f) or cur.get(f)
     return base
 
 
@@ -292,6 +317,81 @@ def reconcile_from_bucket(manifest, public, only=None):
 
 
 # ── main ─────────────────────────────────────────────────────────────
+def meta_backfill(limit, budget):
+    """Federal records archived before the lane kept the landing page's
+    metadata: fetch the page again (HTML only, ~60 KB, same pacing and
+    canary as the archive pass) and record doc_date / doc_ref. Needs no
+    bucket access; the checkpoint upload happens when credentials exist."""
+    manifest = load_manifest(all_parts=False)
+    # Records the local seeder uploaded live in the seed part; date them
+    # too, writing the result into the lane's part (same object, same key).
+    every = load_manifest(all_parts=True)
+    for u, r in every.items():
+        if u not in manifest and r.get('jur') == 'federal' and r.get('key'):
+            manifest[u] = dict(r)
+    todo = [u for u, r in manifest.items()
+            if r.get('jur') == 'federal' and r.get('key') and not r.get('doc_date')
+            and not r.get('meta_fails', 0) >= MAX_FAILS
+            and FED_DOC_RX.search(u)]
+    todo.sort(key=lambda u: int(FED_DOC_RX.search(u).group(1)), reverse=True)
+    todo = todo[:limit]
+    print(f'{len(todo)} federal records to date (of '
+          f'{sum(1 for r in manifest.values() if r.get("jur") == "federal" and r.get("key"))}'
+          f' archived)', flush=True)
+    if not todo:
+        return
+    limiter = HostLimiter(2, 0.6)
+    try:
+        fetch(CANARY[IAAC], limiter)
+    except Exception as e:                                    # noqa: BLE001
+        print(f'  canary FAIL {IAAC}: {e} -- not starting', flush=True)
+        return
+    started, n_ok, n_fail = time.time(), 0, 0
+    can_push = bool(os.environ.get('R2_BUCKET'))
+    for i, url in enumerate(todo, 1):
+        if time.time() - started > budget:
+            print('budget reached', flush=True)
+            break
+        rec = manifest[url]
+        try:
+            if i % 100 == 0:
+                fetch(CANARY[IAAC], limiter)
+            data, ctype, disp = fetch(url, limiter)
+            if data is None or 'html' not in ctype:
+                raise RuntimeError(disp or ctype)
+            meta = federal_meta(data.decode('utf-8', 'replace'))
+            if not meta.get('doc_date'):
+                raise RuntimeError('no Document Date on page')
+            rec.update(meta)
+            rec.pop('meta_fails', None)
+            n_ok += 1
+        except urllib.error.HTTPError as e:
+            n_fail += 1
+            rec['meta_fails'] = rec.get('meta_fails', 0) + 1
+            if e.code == 404:
+                try:
+                    fetch(CANARY[IAAC], limiter)
+                except Exception:                              # noqa: BLE001
+                    rec['meta_fails'] -= 1
+                    print('  IAAC is refusing us -- stopping', flush=True)
+                    break
+        except Exception as e:                                # noqa: BLE001
+            n_fail += 1
+            rec['meta_fails'] = rec.get('meta_fails', 0) + 1
+            rec['meta_error'] = str(e)[:120]
+        if i % 100 == 0 or i == len(todo):
+            save_manifest(manifest)
+            if can_push:
+                push_manifest_to_bucket()
+            print(f'  {i}/{len(todo)}  dated {n_ok}, failed {n_fail}, '
+                  f'{(time.time() - started) / 60:.0f} min', flush=True)
+    save_manifest(manifest)
+    if can_push:
+        push_manifest_to_bucket()
+    dated = sum(1 for r in manifest.values() if r.get('doc_date'))
+    print(f'\nthis run: {n_ok} dated, {n_fail} failed; {dated} federal records carry a date')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--budget', type=int, default=3600, help='seconds')
@@ -301,7 +401,14 @@ def main():
     ap.add_argument('--flush-every', type=int, default=200)
     ap.add_argument('--reconcile', action='store_true',
                     help='rebuild manifest records from a bucket listing, then exit')
+    ap.add_argument('--meta-backfill', type=int, metavar='N',
+                    help='fetch document dates for up to N federal records archived '
+                         'before the lane captured them, then exit')
     args = ap.parse_args()
+
+    if args.meta_backfill:
+        meta_backfill(args.meta_backfill, args.budget)
+        return
 
     public = os.environ.get('R2_PUBLIC_BASE', '').rstrip('/')
     if not args.dry_run:
@@ -408,7 +515,9 @@ def main():
                     raise RuntimeError(disp)
                 file_url, kind = url, 'file'
                 if jur == 'federal' and 'html' in ctype:
-                    fu = resolve_federal(url, data.decode('utf-8', 'replace'))
+                    page = data.decode('utf-8', 'replace')
+                    rec.update(federal_meta(page))
+                    fu = resolve_federal(url, page)
                     if fu:
                         data2, ctype2, disp2 = fetch(fu, limiter)
                         if data2 is None:

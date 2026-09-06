@@ -865,6 +865,7 @@ function openSidebar(feature, marker) {
       ${rows.map(([k, v]) => `<div class="meta-item"><label>${k}</label><span>${v}</span></div>`).join("")}
     </div>
     ${p.registry_url ? `<div style="margin-top:10px"><a href="${p.registry_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">${p.archived ? "Open archived registry record" : "Open registry page"} ↗</a></div>` : ""}
+    ${p.bape_url ? `<div style="margin-top:4px"><a href="${p.bape_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">BAPE dossier (documents, hearings) ↗</a></div>` : ""}
     ${p.proponent_url ? `<div style="margin-top:4px"><a href="${p.proponent_url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#1a3a5c;font-weight:600">Proponent's project page ↗</a></div>` : ""}
     ${p.archived ? `<p style="margin-top:8px;font-size:0.72rem;color:#666">Archived record — assessed under CEAA 1992 and no longer served by the live registry; links point at the Agency's archive.</p>` : ""}
     ${p.geocode === "approximate" ? `<p style="margin-top:8px;font-size:0.72rem;color:#a16207">⚠ Approximate location — pinned to the nearest named place (${(p.geocode_match || "").replace("name:", "")}). The registry does not publish coordinates for this project.</p>` : ""}
@@ -888,10 +889,20 @@ function openSidebar(feature, marker) {
           docList.innerHTML = "";
           const mapSec = mapDocsSection(cat.docs);
           if (mapSec) docList.appendChild(mapSec);
+          // Group by category when the catalogue carries one (Class EA
+          // records organised by study; registry catalogues by document type)
+          const groups = new Map();
+          const grouped = cat.docs.some(d => d.category);
+          for (const doc of cat.docs) {
+            const g = grouped ? (doc.category || "Other") : `Registry documents (${cat.docs.length})`;
+            if (!groups.has(g)) groups.set(g, []);
+            groups.get(g).push(doc);
+          }
+          for (const [gname, gdocs] of groups) {
           const sec = document.createElement("div");
           sec.className = "doc-section";
-          sec.innerHTML = `<div class="doc-section-title">Registry documents (${cat.docs.length})</div>`;
-          for (const doc of cat.docs) {
+          sec.innerHTML = `<div class="doc-section-title">${gname}${grouped ? ` (${gdocs.length})` : ""}</div>`;
+          for (const doc of gdocs) {
             const a = document.createElement("a");
             a.className = "doc-link";
             a.href = doc.url;
@@ -899,7 +910,8 @@ function openSidebar(feature, marker) {
             a.rel = "noopener";
             const title = doc.title && doc.title.length > 80
               ? doc.title.substring(0, 78) + "…" : (doc.title || "Document");
-            a.textContent = doc.date ? `${title} (${doc.date})` : title;
+            const label = doc.code ? `${doc.code} · ${title}` : title;
+            a.textContent = doc.date ? `${label} (${doc.date})` : label;
             sec.appendChild(a);
             if (doc.archive_url) {
               const b = document.createElement("a");
@@ -913,6 +925,7 @@ function openSidebar(feature, marker) {
             }
           }
           docList.appendChild(sec);
+          }
         })
         .catch(() => {
           docList.innerHTML = `<p class="no-docs">Could not load documents — use the registry page link above.</p>`;

@@ -1,7 +1,20 @@
 name: Fetch Quebec document catalogue
 
+# Harvests every BAPE dossier's documentation pages (all pages, with each
+# document's cote and date) into data/raw/qc_bape_doc_catalogue.json, then
+# regenerates the per-project catalogues under data/docs/qc/. Resumable:
+# dossiers whose page count is unchanged are skipped, so the weekly run
+# only re-reads dossiers that grew.
+
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-read every dossier even if its page count is unchanged'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 9 * * 3'
   push:
     branches: [main]
     paths: ['.github/workflows/fetch-qc-docs.yml']
@@ -9,59 +22,48 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: fetch-qc-docs
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
-      - name: Harvest all BAPE documentation pages
-        continue-on-error: true
+      - name: Harvest BAPE documentation pages
         run: |
-          python3 - <<'PYEOF'
-          import re, json, time, urllib.request, html as H
+          ARGS=""
+          [ "${{ inputs.force }}" = "true" ] && ARGS="--force"
+          python3 scripts/fetch_qc_docs.py $ARGS
 
-          UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126.0.0.0'
+      - name: Rebuild catalogues and map data
+        run: |
+          python3 scripts/split_doc_catalogues.py
+          python3 scripts/build_national_geojson.py
+          python3 scripts/build_api.py
+          python3 scripts/validate_data.py
 
-          def get(url, tries=3):
-              for t in range(tries):
-                  try:
-                      req = urllib.request.Request(url, headers={'User-Agent': UA})
-                      return urllib.request.urlopen(req, timeout=60).read().decode('utf-8', 'replace')
-                  except Exception:
-                      if t == tries - 1:
-                          raise
-                      time.sleep(6)
-
-          slugs = json.load(open('data/raw/qc_bape_slugs.json'))
-          cat = {}
-          for i, slug in enumerate(slugs):
-              try:
-                  h = get(f'https://www.bape.gouv.qc.ca/fr/dossiers/{slug}/documentation/')
-              except Exception as e:
-                  print('FAIL', slug, str(e)[:60])
-                  continue
-              docs = []
-              for m in re.finditer(r'<a[^>]+href="(https://voute\.bape\.gouv\.qc\.ca/dl/\?id=[^"]+)"[^>]*>(.*?)</a>', h, re.S):
-                  title = re.sub(r'\s+', ' ', H.unescape(re.sub(r'<[^>]+>', ' ', m.group(2)))).strip()
-                  docs.append({'title': title[:200] or 'Document', 'url': m.group(1)})
-              if docs:
-                  cat[slug] = docs
-              if i % 40 == 0:
-                  print(f'{i}/{len(slugs)}: {sum(len(v) for v in cat.values())} docs')
-              time.sleep(0.4)
-          json.dump(cat, open('data/raw/qc_bape_doc_catalogue.json', 'w'), ensure_ascii=False)
-          print('DONE:', len(cat), 'dossiers with docs,', sum(len(v) for v in cat.values()), 'documents')
-          PYEOF
-
+      # Reset onto current main and re-apply the harvest output rather than
+      # rebasing generated files (the archive lane rewrites the same
+      # catalogues every six hours).
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp data/raw/qc_bape_doc_catalogue.json /tmp/qc_bape_doc_catalogue.json
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main || true
-            git add data/raw
-            git commit -m "Add QC document-page structure probes [skip ci]" || echo "nothing to commit"
+            git fetch origin main
+            git reset -q --hard origin/main
+            cp /tmp/qc_bape_doc_catalogue.json data/raw/qc_bape_doc_catalogue.json
+            python3 scripts/split_doc_catalogues.py
+            python3 scripts/build_national_geojson.py
+            python3 scripts/build_api.py
+            git add data/raw/qc_bape_doc_catalogue.json data/docs data/projects_canada.geojson data/api
+            git commit -m "Quebec BAPE document harvest [skip ci]" || { echo "nothing to commit"; break; }
             git push && break
+            echo "push rejected; retrying against newer main"
             sleep 7
           done

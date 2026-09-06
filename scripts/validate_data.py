@@ -390,6 +390,41 @@ def check_footprints():
               f'{pointed} geojson pointers, {bad} broken')
 
 
+def check_catalogues():
+    """Per-project document catalogues must list each file once and give
+    same-titled files a distinguishing suffix (split_doc_catalogues.py
+    normalises both; any writer that skips it shows up here)."""
+    import collections
+    import glob
+    n_files = n_docs = dup_files = dup_docs = same_files = same_docs = 0
+    for path in glob.glob(os.path.join(ROOT, 'data', 'docs', '*', '*.json')):
+        try:
+            docs = json.load(open(path)).get('docs') or []
+        except (ValueError, OSError):
+            fail(f'unreadable catalogue {os.path.relpath(path, ROOT)}')
+            continue
+        n_files += 1
+        n_docs += len(docs)
+        urls = collections.Counter((d.get('url') or '').strip() for d in docs)
+        d = sum(v - 1 for v in urls.values() if v > 1)
+        if d:
+            dup_files += 1
+            dup_docs += d
+        titles = collections.Counter((' '.join((d.get('title') or '').split()).casefold(),
+                                      d.get('date') or '') for d in docs)
+        t = sum(v for v in titles.values() if v > 1)
+        if t:
+            same_files += 1
+            same_docs += t
+    print(f'  {n_docs} documents in {n_files} catalogues')
+    if dup_docs:
+        fail(f'{dup_docs} repeated document URLs in {dup_files} catalogues '
+             f'(run scripts/split_doc_catalogues.py --normalize-only)')
+    if same_docs:
+        warn(f'{same_docs} same-titled documents in {same_files} catalogues '
+             f'not told apart by date or suffix')
+
+
 def main():
     print('Validating data artifacts...\n')
     for name, fn in (('conditions', check_conditions),
@@ -400,6 +435,7 @@ def main():
                      ('gap report', check_gap_report),
                      ('known projects', check_known_projects),
                      ('api', check_api),
+                     ('catalogues', check_catalogues),
                      ('footprints', check_footprints)):
         print(f'[{name}]')
         try:

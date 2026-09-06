@@ -1,0 +1,289 @@
+{
+ "key": "ipc canada",
+ "site": "https://www.international-petroleum.com/",
+ "host": "www.international-petroleum.com",
+ "fetched": 12,
+ "errors": {},
+ "pages": [
+  {
+   "url": "https://www.international-petroleum.com/",
+   "title": "International Petroleum",
+   "depth": 0,
+   "docs": 3
+  },
+  {
+   "url": "https://www.international-petroleum.com/sustainability/environment",
+   "title": "Environment | International Petroleum",
+   "depth": 1,
+   "docs": 9
+  },
+  {
+   "url": "https://www.international-petroleum.com/legal-notice",
+   "title": "Legal Notice | International Petroleum",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.international-petroleum.com/sustainability/sustainability-reporting",
+   "title": "Sustainability reporting | International Petroleum",
+   "depth": 1,
+   "docs": 7
+  },
+  {
+   "url": "https://www.international-petroleum.com/operations",
+   "title": "Operations | International Petroleum",
+   "depth": 1,
+   "docs": 1
+  },
+  {
+   "url": "https://www.international-petroleum.com/operations/canada",
+   "title": "Canada | International Petroleum",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.international-petroleum.com/operations/france",
+   "title": "France | International Petroleum",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.international-petroleum.com/operations/malaysia",
+   "title": "Malaysia | International Petroleum",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.international-petroleum.com/sustainability",
+   "title": "Sustainability | International Petroleum",
+   "depth": 1,
+   "docs": 0
+  },
+  {
+   "url": "https://www.international-petroleum.com/sustainability/social",
+   "title": "Social | International Petroleum",
+   "depth": 1,
+   "docs": 6
+  },
+  {
+   "url": "https://www.international-petroleum.com/sustainability/governance",
+   "title": "Governance | International Petroleum",
+   "depth": 1,
+   "docs": 6
+  },
+  {
+   "url": "https://www.international-petroleum.com/who-we-are",
+   "title": "Who we are | International Petroleum",
+   "depth": 1,
+   "docs": 1
+  }
+ ],
+ "docs": [
+  {
+   "url": "https://www.international-petroleum.com/download/q2-2026-operations-and-financial-update-presentation",
+   "title": "Download",
+   "type": "newsletter",
+   "page": "https://www.international-petroleum.com/"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/capital-markets-day-2026",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/latest-corporate-presentation",
+   "title": "Download",
+   "type": "presentation",
+   "page": "https://www.international-petroleum.com/"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-reporting-2025",
+   "title": "Sustainability Report",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/environmental-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-canada-2024",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-canada-2023",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-canada-2022",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-canada-2021",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-canada-2020-2",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-france-2020",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/independent-ghg-verification-statement-malaysia-2020",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/environment"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-reporting-framework-and-standards-index-2025",
+   "title": "sustainability-reporting-framework-and-standards-index-2025",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-report-2024",
+   "title": "sustainability-report-2024",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-report-2023",
+   "title": "sustainability-report-2023",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/2022-sustainability-report",
+   "title": "2022-sustainability-report",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-report-2021",
+   "title": "sustainability-report-2021",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/sustainability-report-2020",
+   "title": "sustainability-report-2020",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/ipc-sustainability-report-2019",
+   "title": "ipc-sustainability-report-2019",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/sustainability-reporting"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/ipc-asset-maps",
+   "title": "Asset Maps",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/operations"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/health-safety-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/security-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/diversity-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/human-rights-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/stakeholder-relations-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/ipc-supplier-code-of-conduct",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/social"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/code-ethics-business-conduct",
+   "title": "Code of Ethics and Business Conduct",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/anti-corruption-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/anti-fraud-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/anti-money-laundering-policy",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/whistleblowing-policy-procedure",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://international-petroleum.vercel.app/download/sustainability-policy",
+   "title": "Sustainability Policy",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/sustainability/governance"
+  },
+  {
+   "url": "https://www.international-petroleum.com/download/ipc-vision-values-in-action",
+   "title": "Download",
+   "type": "other",
+   "page": "https://www.international-petroleum.com/who-we-are"
+  }
+ ],
+ "doc_types": {
+  "newsletter": 1,
+  "other": 31,
+  "presentation": 1
+ },
+ "crawled_at": "2026-09-06T08:04:04Z",
+ "name": "IPC Canada Ltd.",
+ "via_browser": false
+}

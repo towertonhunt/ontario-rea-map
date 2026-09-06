@@ -135,6 +135,44 @@ sidebars (`docs_path` property -> `data/docs/<jur>/<id>.json`).
   budget 16000s, --browser: crawl -> Wayback harvest (90 min cap) -> promote ->
   rebuild -> commit (reset-to-main, no rebase).
 
+## Document naming convention (2026-09-04/05, user: date + kind, distinct per link)
+- Rule: every document link carries its issue date and a kind-specific name;
+  identical titles in one sidebar are a defect. Ontario REA trigger case:
+  Marsh Hill showed five "Renewable Energy Approval" links.
+- REA instruments: `scripts/fetch_rea_instruments.py` reads page one of each
+  Access Environment instrument PDF (+ proponent-hosted copies whose title/
+  filename says REA) for heading + "Issue Date:" -> data/raw/rea_instruments
+  .json; build_national_geojson.name_rea_documents() titles them
+  "2013-Apr-15 - Renewable Energy Approval [Amendment]", oldest first, and
+  suffixes " (proponent copy)" when a proponent file duplicates a registry
+  instrument. Idempotent; re-run after any REA scrape.
+- Catalogue hygiene: split_doc_catalogues.py ends every mode with
+  attach_archive_urls() (archive_url + doc_date from the manifests, merged
+  field-wise across parts) then normalize_catalogues(): one record per URL
+  (fuller title wins), then same-titled/same-date docs get a suffix from, in
+  order: BAPE cote, meaningful filename, Wayback capture date, category,
+  registry id "(doc N)"/"(BAPE N)", "(2 of 3)". `--normalize-only` runs just
+  that. validate_data.check_catalogues fails on repeated URLs. First pass
+  dropped 14,117 repeated records (harvests filed files 2-4x; Wheeler River
+  464 -> 207).
+- Federal dates: IAAC landing pages carry <meta name="Document Date"> +
+  "Document reference number"; archive_docs.py keeps doc_date/doc_ref on the
+  manifest record while archiving, and `--meta-backfill N` re-reads pages of
+  records archived earlier (archive-r2.yml runs 1,200/run after the archive
+  pass). A date arriving replaces the "(doc N)" suffix.
+- Quebec: `scripts/fetch_qc_docs.py` walks the dossier listing (29 pages)
+  and EVERY documentation page of every dossier (25 tiles/page, ordered by
+  cote) -> data/raw/qc_bape_doc_catalogue.json {slug: {title, pages, docs[
+  title,url,code,date,author,...]}}; the July harvest had read page one only
+  (7.3k of 62k docs). split_doc_catalogues writes data/docs/qc/<slug[:60]>
+  .json keeping the existing `project` label (R2 keys depend on it).
+  `scripts/link_qc_bape.py` matches REE projects to dossiers by distinctive
+  name tokens (>=3 shared, or 2 covering >=75% of both) -> data/raw/
+  qc_bape_links.json; hand fixes in qc_bape_overrides.json; the builder sets
+  docs_path/doc_count/bape_url on the REE feature (REE itself publishes no
+  documents). Sidebar shows "CODE · title (date)". Lane fetch-qc-docs.yml:
+  weekly (Wed) + dispatch, resumable by page count.
+
 ## Data inventory (as of 2026-07-05)
 - Map: 18,401 features. Federal 6,576 (complete registry incl. federal-lands
   + archived), BC 358, QC 402, NS 248, NL 1,508, MB 2,716, ON REA 197,
