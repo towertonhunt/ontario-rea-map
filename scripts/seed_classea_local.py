@@ -173,6 +173,9 @@ def detour():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--verify', action='store_true',
+                    help='HEAD every archived Class EA object first; forget records whose '
+                         'object is gone so they are re-uploaded (after a manual bucket edit)')
     ap.add_argument('--no-upload', action='store_true',
                     help='write catalogues/projects for already-archived files only; '
                          'skip files that still need uploading (no credentials needed)')
@@ -186,6 +189,27 @@ def main():
                 break
     if not public:
         raise SystemExit('R2_PUBLIC_BASE is not set (export the R2_* variables first)')
+
+    if args.verify:
+        import urllib.request
+        cm = json.load(gzip.open(CLASSEA_MANIFEST, 'rt')) if os.path.exists(CLASSEA_MANIFEST) else {}
+        gone = []
+        for u, rec in list(cm.items()):
+            if not rec.get('archive_url'):
+                continue
+            try:
+                req = urllib.request.Request(rec['archive_url'], method='HEAD')
+                urllib.request.urlopen(req, timeout=30)
+            except Exception as e:                                   # noqa: BLE001
+                if 'HTTP Error 404' in str(e):
+                    gone.append(u)
+        for u in gone:
+            del cm[u]
+            known.pop(u, None)
+        if gone:
+            import gzip as _g
+            json.dump(cm, _g.open(CLASSEA_MANIFEST, 'wt'), ensure_ascii=False)
+        print(f'--verify: {len(gone)} archived objects no longer in the bucket; records forgotten')
 
     projects = hydro_one() + detour()
     all_docs = [(p, d) for p in projects for d in p['docs']]
