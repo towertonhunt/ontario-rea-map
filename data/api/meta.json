@@ -1,8 +1,8 @@
 {
- "total": 19020,
+ "total": 19015,
  "depth": {
   "1": 12059,
-  "2": 6805,
+  "2": 6800,
   "3": 156
  },
  "deep_tier_ids": [
@@ -195,7 +195,7 @@
   "wind": 252,
   "biogas": 23,
   "energy_other": 616,
-  "mining": 6955,
+  "mining": 6950,
   "industrial": 1024,
   "tourism": 58,
   "oil_gas": 732,

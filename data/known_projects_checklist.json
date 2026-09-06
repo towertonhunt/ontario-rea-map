@@ -123,11 +123,12 @@
   {
    "name": "Detour Lake Gold Mine (federal comprehensive study, CEAR 10-03-52262)",
    "variants": [
+    "detour lake mine (incl",
     "detour lake gold mine"
    ],
    "proponent": "Detour Gold",
    "expect": "present",
-   "why": "user-reported 2026-09-02: registry link 404d (archived CEAR id on live path) and no docs; fixed via /archives/evaluations + archive-document catalogue"
+   "why": "user-reported 2026-09-02: registry link 404d (archived CEAR id on live path) and no docs; fixed via /archives/evaluations + archive-document catalogue; 2026-09-06 federal record folded into the consolidated on_class_ea point \"Detour Lake Mine (incl. West Detour)\""
   },
   {
    "name": "Detour Lake Contingency Power Project (ON provincial EA)",

@@ -51,21 +51,24 @@ CLASSEA_MANIFEST = MANIFEST.replace('.json.gz', '_classea.json.gz')
 # Detour: subfolders whose PDFs are public EA deliverables. Everything else in
 # the folder is consulting work product and is deliberately not listed.
 DETOUR_INCLUDE = {
-    '2010 Detour Lake Power Project': ('detour-lake-power-project', 'Detour Lake Power Project (Class EA, 2010)'),
-    '2010 DLTPP Class EA': ('detour-lake-transmission-class-ea', 'Detour Lake Transmission Power Project Class EA (2010)'),
-    '2010 MNR Class EA': ('detour-lake-mine-mnr-class-ea', 'Detour Lake Project MNR Class EA (2010)'),
-    '2011 CEAA Comprehensive Study DLM': ('detour-lake-ceaa-comprehensive-study', 'Detour Lake Gold Mine CEAA Comprehensive Study (2011)'),
-    '2019 WDP Environmental Study Report': ('west-detour-esr', 'West Detour Project Environmental Study Report (2019)'),
-    '2020 WDP Environmental Study Report Addendum': ('west-detour-esr', 'West Detour Project Environmental Study Report (2019)'),
-    'Basic Impact Assessment': ('west-detour-esr', 'West Detour Project Environmental Study Report (2019)'),
+    # subfolder -> (key slug [unchanged: bucket keys depend on it], section title)
+    '2010 MNR Class EA': ('detour-lake-mine-mnr-class-ea', '2010 MNR Class EA (Detour Lake Project ESR)'),
+    '2010 DLTPP Class EA': ('detour-lake-transmission-class-ea', '2010 Transmission Class EA (DLTPP Environmental Review Report)'),
+    '2010 Detour Lake Power Project': ('detour-lake-power-project', '2010 Detour Lake Power Project EA (230 kV line)'),
+    '2011 CEAA Comprehensive Study DLM': ('detour-lake-ceaa-comprehensive-study', '2011 CEAA Comprehensive Study'),
+    '2019 WDP Environmental Study Report': ('west-detour-esr', '2019 West Detour Project ESR'),
+    '2020 WDP Environmental Study Report Addendum': ('west-detour-esr', '2020 West Detour Project ESR Addendum'),
+    'Basic Impact Assessment': ('west-detour-esr', '2020 West Detour Project ESR Addendum'),
 }
-# Never publish: review comments, responses, memos, notes -- anything that is
-# not the original report. Moose Cree First Nation material in particular.
-DETOUR_EXCLUDE = re.compile(r'Federal[_ ]Review|MCFN|Moose[_ ]Cree|Comment|Response|Consultation|'
-                            r'SEA[_ ]review|\bMEM\b|\bNOTE\b|\bTAB\b|- Copy', re.I)
+# Never publish: review comments, responses, memos, notes, loose figures --
+# anything that is not the original report. Moose Cree First Nation
+# material in particular.
+DETOUR_EXCLUDE = re.compile(r'Federal[_ ]Review|MCFN[_ ]Comments|Comments[_ ]on|Moose[_ ]Cree|Comment|Response|'
+                            r'Consultation|SEA[_ ]review|\bMEM\b|\bNOTE\b|\bTAB\b|- Copy|^Figure', re.I)
 
 DETOUR_ROOT_FILES = {  # loose files at the folder root that are public record
-    'MNR_West Detour Project-Statement of Completion_March_23_2021.pdf': 'west-detour-esr',
+    'MNR_West Detour Project-Statement of Completion_March_23_2021.pdf':
+        ('west-detour-esr', '2021 West Detour Statement of Completion (MNR)'),
 }
 DETOUR_COORDS = [-79.6878, 50.0228]      # Detour Lake mine, from the federal record
 
@@ -115,78 +118,71 @@ def hydro_one():
 
 
 def detour():
-    groups = {}
-    for sub, (s, name) in DETOUR_INCLUDE.items():
+    docs = []
+    for sub, (kslug, section) in DETOUR_INCLUDE.items():
         d = os.path.join(DETOUR, sub)
         if not os.path.isdir(d):
             continue
         for p in sorted(glob.glob(os.path.join(d, '**', '*.pdf'), recursive=True)):
             base = os.path.basename(p)
-            if DETOUR_EXCLUDE.search(base):
+            if DETOUR_EXCLUDE.search(base.replace('_', ' ')):
                 continue
-            groups.setdefault(s, {'name': name, 'docs': []})['docs'].append({
-                'title': os.path.splitext(base)[0].replace('_', ' '), 'url': None,
-                'category': sub, 'key': f'classea/detour-gold/{s}/{safe(sub)}/{safe(base)}',
-                'local': p})
-    for base, s in DETOUR_ROOT_FILES.items():
+            docs.append({'title': os.path.splitext(base)[0].replace('_', ' '), 'url': None,
+                         'category': section,
+                         'key': f'classea/detour-gold/{kslug}/{safe(sub)}/{safe(base)}', 'local': p})
+    for base, (kslug, section) in DETOUR_ROOT_FILES.items():
         p = os.path.join(DETOUR, base)
         if os.path.exists(p):
-            groups.setdefault(s, {'name': s, 'docs': []})['docs'].append({
-                'title': os.path.splitext(base)[0].replace('_', ' '), 'url': None,
-                'category': 'Statement of Completion',
-                'key': f'classea/detour-gold/{s}/{safe(base)}', 'local': p})
-    meta = {
-        'west-detour-esr': dict(
-            proponent='Detour Gold Corporation (now Agnico Eagle Mines)',
-            class_ea='Class EA for Activities of the MNDM under the Mining Act (ESR)',
-            status='Statement of Completion issued March 23, 2021',
-            description='West Detour Project: expansion of the Detour Lake Mine (West Detour pit, '
-                        'North pit, Walter Lake overburden) assessed as a provincial ESR after the '
-                        'federal Minister declined to designate the project under CEAA 2012 (2017).'),
-        'detour-lake-mine-mnr-class-ea': dict(
-            proponent='Detour Gold Corporation',
-            class_ea='MNR Class EA for Resource Stewardship and Facility Development',
-            status='Completed 2010'),
-        'detour-lake-transmission-class-ea': dict(
-            proponent='Detour Gold Corporation',
-            class_ea='Class EA for Minor Transmission Facilities', status='Completed 2010'),
-        'detour-lake-power-project': dict(
-            proponent='Detour Gold Corporation',
-            class_ea='Individual EA (Detour Lake Power Project, 230 kV line)',
-            status='Approved December 15, 2010'),
-        'detour-lake-ceaa-comprehensive-study': dict(
-            proponent='Detour Gold Corporation',
-            class_ea='CEAA 1992 Comprehensive Study (CEAR 10-03-52262)',
-            status='Completed 2011'),
-    }
-    out = []
-    for s, g in groups.items():
-        m = meta.get(s, {})
-        out.append({
-            'slug': f'detour-gold-{s}', 'name': g['name'],
-            'proponent': m.get('proponent'), 'jurisdiction': 'Ontario (Class EA)',
-            'source': 'on_class_ea', 'class_ea': m.get('class_ea'),
-            'type': 'Mining', 'status': m.get('status'), 'municipality': 'Cochrane',
-            'registry_url': None, 'proponent_url':
-                'https://www.agnicoeagle.com/English/operations/operations/detour-lake/',
-            'description': m.get('description'), 'coords': DETOUR_COORDS,
-            'docs': g['docs'],
-        })
-    return out
+            docs.append({'title': os.path.splitext(base)[0].replace('_', ' '), 'url': None,
+                         'category': section,
+                         'key': f'classea/detour-gold/{kslug}/{safe(base)}', 'local': p})
+    order = {sec: i for i, (_, sec) in enumerate(list(DETOUR_INCLUDE.values())
+                                                + list(DETOUR_ROOT_FILES.values()))}
+    docs.sort(key=lambda d: (order.get(d['category'], 99), d['title']))
+    return [{
+        'slug': 'detour-gold-detour-lake-mine', 'name': 'Detour Lake Mine (incl. West Detour)',
+        'proponent': 'Detour Gold Corporation (now Agnico Eagle Mines)',
+        'jurisdiction': 'Ontario (Class EA)', 'source': 'on_class_ea',
+        'class_ea': 'MNR Class EA (2010); Transmission Class EA (2010); Individual EA (2010); '
+                    'CEAA 1992 Comprehensive Study (2011); MNDM Class EA ESR (2019-2021)',
+        'type': 'Mining', 'status': 'Operating; West Detour Statement of Completion March 23, 2021',
+        'municipality': 'Cochrane',
+        'registry_url': 'https://iaac-aeic.gc.ca/archives/evaluations/52262/details-eng_pid=52262.html',
+        'proponent_url': 'https://www.agnicoeagle.com/English/operations/operations/detour-lake/',
+        'description': 'Open-pit gold mine 185 km northeast of Cochrane. The EA record spans the 2010 '
+                       'provincial Class EAs and Individual EA, the 2011 federal comprehensive study '
+                       '(CEAR 10-03-52262), and the West Detour expansion assessed as a provincial ESR '
+                       'after the federal Minister declined to designate it in 2017.',
+        'coords': DETOUR_COORDS,
+        # the federal registry record for the same mine is folded into this point
+        'merge_registry': [{'source': 'federal_iaac', 'project': '10-03-52262',
+                            'section': 'Federal registry (CEAR 10-03-52262)'}],
+        'docs': docs,
+    }]
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--no-upload', action='store_true',
+                    help='write catalogues/projects for already-archived files only; '
+                         'skip files that still need uploading (no credentials needed)')
     args = ap.parse_args()
     public = os.environ.get('R2_PUBLIC_BASE', '').rstrip('/')
-    if not args.dry_run and not public:
+    known = load_manifest()
+    if not public:      # derive from any archived record (dry runs, catalogue-only runs)
+        for v in known.values():
+            if v.get('archive_url') and v.get('key') and v['archive_url'].endswith(v['key']):
+                public = v['archive_url'][:-len(v['key'])].rstrip('/')
+                break
+    if not public:
         raise SystemExit('R2_PUBLIC_BASE is not set (export the R2_* variables first)')
 
     projects = hydro_one() + detour()
-    known = load_manifest()
     all_docs = [(p, d) for p in projects for d in p['docs']]
-    to_upload = [(p, d) for p, d in all_docs if d['local'] and not known.get(d['key'], {}).get('key')]
+    # a record is looked up by the URL the catalogue carries (source URL, else archive URL)
+    to_upload = [(p, d) for p, d in all_docs
+                 if d['local'] and not known.get(d['url'] or f'{public}/{d["key"]}', {}).get('key')]
     missing = [(p, d) for p, d in all_docs if not d['local']]
     n_bytes = sum(os.path.getsize(d['local']) for _, d in to_upload)
     print(f'{len(projects)} projects, {len(all_docs)} documents: {len(to_upload)} to upload '
@@ -197,6 +193,13 @@ def main():
             print('  ', d['key'])
         return
 
+    if args.no_upload:
+        skipped = {d['key'] for _, d in to_upload}
+        to_upload = []
+        print(f'--no-upload: {len(skipped)} unarchived files left out of the catalogues '
+              f'until a credentialed run')
+    else:
+        skipped = set()
     staging = tempfile.mkdtemp(prefix='ea-classea-')
     seed = {}
     if os.path.exists(CLASSEA_MANIFEST):
@@ -227,7 +230,10 @@ def main():
     for p in projects:
         docs = []
         for d in p['docs']:
-            rec = seed.get(d['url'] or d['key']) or known.get(d['url'] or d['key']) or {}
+            if d['key'] in skipped:
+                continue
+            lookup = d['url'] or f'{public}/{d["key"]}'
+            rec = seed.get(lookup) or known.get(lookup) or {}
             entry = {'title': d['title'], 'category': d['category'],
                      'url': d['url'] or rec.get('archive_url')}
             if rec.get('archive_url'):

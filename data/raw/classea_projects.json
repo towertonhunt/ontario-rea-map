@@ -1045,103 +1045,30 @@
   "docs_path": "data/docs/classea/hydro-one-york-battery-energy-storage-system.json"
  },
  {
-  "slug": "detour-gold-detour-lake-power-project",
-  "name": "Detour Lake Power Project (Class EA, 2010)",
-  "proponent": "Detour Gold Corporation",
-  "jurisdiction": "Ontario (Class EA)",
-  "source": "on_class_ea",
-  "class_ea": "Individual EA (Detour Lake Power Project, 230 kV line)",
-  "type": "Mining",
-  "status": "Approved December 15, 2010",
-  "municipality": "Cochrane",
-  "registry_url": null,
-  "proponent_url": "https://www.agnicoeagle.com/English/operations/operations/detour-lake/",
-  "description": null,
-  "coords": [
-   -79.6878,
-   50.0228
-  ],
-  "doc_count": 1,
-  "docs_path": "data/docs/classea/detour-gold-detour-lake-power-project.json"
- },
- {
-  "slug": "detour-gold-detour-lake-transmission-class-ea",
-  "name": "Detour Lake Transmission Power Project Class EA (2010)",
-  "proponent": "Detour Gold Corporation",
-  "jurisdiction": "Ontario (Class EA)",
-  "source": "on_class_ea",
-  "class_ea": "Class EA for Minor Transmission Facilities",
-  "type": "Mining",
-  "status": "Completed 2010",
-  "municipality": "Cochrane",
-  "registry_url": null,
-  "proponent_url": "https://www.agnicoeagle.com/English/operations/operations/detour-lake/",
-  "description": null,
-  "coords": [
-   -79.6878,
-   50.0228
-  ],
-  "doc_count": 4,
-  "docs_path": "data/docs/classea/detour-gold-detour-lake-transmission-class-ea.json"
- },
- {
-  "slug": "detour-gold-detour-lake-mine-mnr-class-ea",
-  "name": "Detour Lake Project MNR Class EA (2010)",
-  "proponent": "Detour Gold Corporation",
-  "jurisdiction": "Ontario (Class EA)",
-  "source": "on_class_ea",
-  "class_ea": "MNR Class EA for Resource Stewardship and Facility Development",
-  "type": "Mining",
-  "status": "Completed 2010",
-  "municipality": "Cochrane",
-  "registry_url": null,
-  "proponent_url": "https://www.agnicoeagle.com/English/operations/operations/detour-lake/",
-  "description": null,
-  "coords": [
-   -79.6878,
-   50.0228
-  ],
-  "doc_count": 2,
-  "docs_path": "data/docs/classea/detour-gold-detour-lake-mine-mnr-class-ea.json"
- },
- {
-  "slug": "detour-gold-detour-lake-ceaa-comprehensive-study",
-  "name": "Detour Lake Gold Mine CEAA Comprehensive Study (2011)",
-  "proponent": "Detour Gold Corporation",
-  "jurisdiction": "Ontario (Class EA)",
-  "source": "on_class_ea",
-  "class_ea": "CEAA 1992 Comprehensive Study (CEAR 10-03-52262)",
-  "type": "Mining",
-  "status": "Completed 2011",
-  "municipality": "Cochrane",
-  "registry_url": null,
-  "proponent_url": "https://www.agnicoeagle.com/English/operations/operations/detour-lake/",
-  "description": null,
-  "coords": [
-   -79.6878,
-   50.0228
-  ],
-  "doc_count": 1,
-  "docs_path": "data/docs/classea/detour-gold-detour-lake-ceaa-comprehensive-study.json"
- },
- {
-  "slug": "detour-gold-west-detour-esr",
-  "name": "West Detour Project Environmental Study Report (2019)",
+  "slug": "detour-gold-detour-lake-mine",
+  "name": "Detour Lake Mine (incl. West Detour)",
   "proponent": "Detour Gold Corporation (now Agnico Eagle Mines)",
   "jurisdiction": "Ontario (Class EA)",
   "source": "on_class_ea",
-  "class_ea": "Class EA for Activities of the MNDM under the Mining Act (ESR)",
+  "class_ea": "MNR Class EA (2010); Transmission Class EA (2010); Individual EA (2010); CEAA 1992 Comprehensive Study (2011); MNDM Class EA ESR (2019-2021)",
   "type": "Mining",
-  "status": "Statement of Completion issued March 23, 2021",
+  "status": "Operating; West Detour Statement of Completion March 23, 2021",
   "municipality": "Cochrane",
-  "registry_url": null,
+  "registry_url": "https://iaac-aeic.gc.ca/archives/evaluations/52262/details-eng_pid=52262.html",
   "proponent_url": "https://www.agnicoeagle.com/English/operations/operations/detour-lake/",
-  "description": "West Detour Project: expansion of the Detour Lake Mine (West Detour pit, North pit, Walter Lake overburden) assessed as a provincial ESR after the federal Minister declined to designate the project under CEAA 2012 (2017).",
+  "description": "Open-pit gold mine 185 km northeast of Cochrane. The EA record spans the 2010 provincial Class EAs and Individual EA, the 2011 federal comprehensive study (CEAR 10-03-52262), and the West Detour expansion assessed as a provincial ESR after the federal Minister declined to designate it in 2017.",
   "coords": [
    -79.6878,
    50.0228
   ],
-  "doc_count": 11,
-  "docs_path": "data/docs/classea/detour-gold-west-detour-esr.json"
+  "merge_registry": [
+   {
+    "source": "federal_iaac",
+    "project": "10-03-52262",
+    "section": "Federal registry (CEAR 10-03-52262)"
+   }
+  ],
+  "doc_count": 12,
+  "docs_path": "data/docs/classea/detour-gold-detour-lake-mine.json"
  }
 ]

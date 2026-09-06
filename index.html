@@ -504,10 +504,20 @@ function openSidebar(feature, marker) {
         .then(cat => {
           if (activeMarker && activeMarker.feature.properties !== p) return; // stale click
           docList.innerHTML = "";
+          // Group by category when the catalogue carries one (Class EA
+          // records organised by study; registry catalogues by document type)
+          const groups = new Map();
+          const grouped = cat.docs.some(d => d.category);
+          for (const doc of cat.docs) {
+            const g = grouped ? (doc.category || "Other") : `Registry documents (${cat.docs.length})`;
+            if (!groups.has(g)) groups.set(g, []);
+            groups.get(g).push(doc);
+          }
+          for (const [gname, gdocs] of groups) {
           const sec = document.createElement("div");
           sec.className = "doc-section";
-          sec.innerHTML = `<div class="doc-section-title">Registry documents (${cat.docs.length})</div>`;
-          for (const doc of cat.docs) {
+          sec.innerHTML = `<div class="doc-section-title">${gname}${grouped ? ` (${gdocs.length})` : ""}</div>`;
+          for (const doc of gdocs) {
             const a = document.createElement("a");
             a.className = "doc-link";
             a.href = doc.url;
@@ -530,6 +540,7 @@ function openSidebar(feature, marker) {
             }
           }
           docList.appendChild(sec);
+          }
         })
         .catch(() => {
           docList.innerHTML = `<p class="no-docs">Could not load documents — use the registry page link above.</p>`;

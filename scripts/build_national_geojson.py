@@ -429,12 +429,37 @@ print(f'ontario provincial EA (no coords yet): {n_onp}')
 classea_path = os.path.join(RAW, 'classea_projects.json')
 n_classea = 0
 if os.path.exists(classea_path):
-    for rec in json.load(open(classea_path)):
+    classea_recs = json.load(open(classea_path))
+    # A consolidated Class EA point may absorb a registry record for the same
+    # project: its documents become a section, and the separate pin is dropped.
+    merged_registry = {}
+    for rec in classea_recs:
+        for m in rec.get('merge_registry') or []:
+            merged_registry[(m['source'], m['project'])] = (rec, m['section'])
+    for (src, pid), (rec, section) in merged_registry.items():
+        for f in list(features):
+            p = f['properties']
+            if p.get('source') == src and (p.get('docs_path') or '').endswith(f'/{pid}.json'):
+                try:
+                    reg_docs = json.load(open(os.path.join(ROOT, p['docs_path'])))['docs']
+                except (OSError, ValueError):
+                    reg_docs = []
+                cpath = os.path.join(ROOT, rec['docs_path'])
+                cat = json.load(open(cpath))
+                have = {d.get('url') for d in cat['docs']}
+                added = [dict(d, category=section) for d in reg_docs if d.get('url') not in have]
+                if added:
+                    cat['docs'] += added
+                    json.dump(cat, open(cpath, 'w'), ensure_ascii=False)
+                rec['doc_count'] = len(cat['docs'])
+                rec.setdefault('registry_ids', []).append(f'{src}:{pid}')
+                features.remove(f)
+    for rec in classea_recs:
         geom = None
         if rec.get('coords'):
             lon, lat = rec['coords']
             geom = {'type': 'Point', 'coordinates': [lon, lat]}
-        props = {k: v for k, v in rec.items() if k not in ('coords', 'slug')}
+        props = {k: v for k, v in rec.items() if k not in ('coords', 'slug', 'merge_registry')}
         props.setdefault('category', 'energy_other' if 'ransmission' in (rec.get('type') or '')
                          else 'mining' if rec.get('type') == 'Mining' else 'other')
         add({'type': 'Feature', 'geometry': geom, 'properties': props})
