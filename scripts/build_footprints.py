@@ -647,7 +647,7 @@ def run_cwtd(projects, cwtd_file=None):
 
 # ── OpenStreetMap / Overpass ─────────────────────────────────────────
 OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
-OSM_RADIUS_KM = {'mining': 5, 'hydro': 6, 'solar': 3, 'wind': 8, 'energy_other': 5, 'oil_gas': 5,
+OSM_RADIUS_KM = {'mining': 5, 'hydro': 6, 'solar': 3, 'wind': 8, 'energy_other': 5, 'oil_gas': 5, 'transmission': 10,
                  'nuclear': 4, 'waste': 3, 'industrial': 3, 'biogas': 2}
 SECTOR_ROLES = {
     'mining': {'pit', 'tailings', 'waste_rock', 'shaft', 'plant', 'rail', 'access_road'},
@@ -655,6 +655,7 @@ SECTOR_ROLES = {
     'solar': {'solar_array', 'substation', 'plant'},
     'wind': {'turbine', 'substation', 'collector_line'},
     'energy_other': {'transmission_line', 'substation', 'plant', 'generator', 'pipeline'},
+    'transmission': {'transmission_line', 'collector_line', 'substation'},
     'oil_gas': {'well', 'pipeline', 'plant', 'landfill'},
     'nuclear': {'plant', 'substation', 'transmission_line', 'building'},
     'waste': {'landfill', 'plant'},
@@ -771,7 +772,7 @@ def osm_candidates(projects):
     cands = [p for p in projects if p['ll'] and not p['approx'] and p['category'] in OSM_RADIUS_KM]
     # documented projects first, then big-footprint sectors
     order = {'mining': 0, 'hydro': 1, 'oil_gas': 2, 'nuclear': 3, 'energy_other': 4, 'wind': 5,
-             'solar': 6, 'industrial': 7, 'waste': 8, 'biogas': 9}
+             'solar': 6, 'industrial': 7, 'waste': 8, 'biogas': 9, 'transmission': 4}
     cands.sort(key=lambda p: (-min(p['docs'], 50), order.get(p['category'], 9), p['name']))
     return cands
 
@@ -828,7 +829,7 @@ def run_osm(projects, budget, limit, fixture=None):
             feats.append({'type': 'Feature', 'geometry': geom, 'properties': props})
         # a proximity-only result made of nothing but lines/substations is
         # usually the grid passing by -> demand at least one area/point element
-        if feats and all(f['properties']['match'] == 'proximity' for f in feats):
+        if feats and p['category'] != 'transmission' and all(f['properties']['match'] == 'proximity' for f in feats):
             kinds = {f['properties']['role'] for f in feats}
             if kinds <= {'transmission_line', 'collector_line', 'substation', 'pipeline', 'access_road', 'rail'}:
                 feats = []

@@ -30,9 +30,19 @@ def add(feat):
         # under CEAA 1992", "Project on federal lands") in `type`, so a
         # type-only classify buckets every federal project as 'other'.
         # Fall back to the project name + description, which name the sector.
+        # name before description: a mine's description mentions its
+        # transmission line and access road; the name says what it is
         cat = categorize(p.get('type') or '')
         if cat == 'other':
-            cat = categorize(f"{p.get('name') or ''} {p.get('description') or ''}")
+            cat = categorize(p.get('name') or '')
+        if cat == 'other':
+            # a description names the mine or plant first and its
+            # transmission connection second -> transmission only when
+            # nothing else in the description fits
+            desc = p.get('description') or ''
+            cat = categorize(desc, skip=('transmission',))
+            if cat == 'other':
+                cat = categorize(desc)
         p['category'] = cat
     features.append(feat)
 
@@ -42,9 +52,17 @@ CATEGORY_RULES = [
     ('solar', ['solar', 'solaire']),
     ('biogas', ['biogas', 'anaerobic', 'biomass', 'bioenergy', 'biométhane',
                 'biomethane', 'biomasse']),
+    # before hydro: "Hydro One 230 kV line" is transmission, not a dam
+    ('transmission', ['transmission', 'transformer station', 'transformer substation',
+                      'substation', 'switching station', 'switchyard', 'power line',
+                      'powerline', 'interconnect', 'kv', 'kilovolt', 'tie line',
+                      'ligne de transport', "ligne d'énergie", "ligne d'energie",
+                      'ligne électrique', 'ligne electrique', 'poste électrique',
+                      'poste electrique', 'poste de transformation', 'raccordement',
+                      'lignes électriques', 'lignes electriques']),
     ('hydro', ['hydro', 'dam', 'water power', 'waterpower', 'barrage',
                'digue', 'rivière', 'riviere']),
-    ('mining', ['mine', 'mining', 'quarry', 'aggregate', 'coal', 'metal',
+    ('mining', ['mine', 'mines', 'mining', 'quarry', 'aggregate', 'coal', 'metal',
                 'minier', 'minière', 'miniere', 'carrière', 'carriere',
                 "banc d'emprunt"]),
     ('oil_gas', ['oil', 'gas', 'lng', 'pipeline', 'petroleum', 'refinery',
@@ -76,7 +94,7 @@ CATEGORY_RULES = [
 # "report"/"important", "rail" no longer hits "trail"). A few short English
 # words that are prefixes of unrelated words must match as whole words.
 _WHOLE_WORD = {'dam', 'mill', 'port', 'oil', 'gas', 'rail', 'road', 'metal',
-               'coal', 'mine', 'plant', 'mill', 'power', 'water', 'waste'}
+               'coal', 'mine', 'plant', 'mill', 'power', 'water', 'waste', 'kv'}
 
 
 def _kw_pattern(kw):
@@ -88,10 +106,17 @@ _COMPILED = [(cat, re.compile('|'.join(_kw_pattern(k) for k in keys)))
              for cat, keys in CATEGORY_RULES]
 
 
-def categorize(type_str):
+# "transmission" also names gas pipelines and water mains -> not electrical
+_EXCLUDE = {'transmission': re.compile(r'gas transmission|pipeline|gazoduc|wastewater|sewage|sewer|'
+                                       r'water (?:supply|main|transmission|treatment)|eaux us|aqueduc|\d\s*mm\b|ngtl|nova gas')}
+
+
+def categorize(type_str, skip=()):
     t = str(type_str).lower()
     for cat, pat in _COMPILED:
-        if pat.search(t):
+        if cat in skip:
+            continue
+        if pat.search(t) and not (cat in _EXCLUDE and _EXCLUDE[cat].search(t)):
             return cat
     return 'other'
 
@@ -461,8 +486,11 @@ if os.path.exists(classea_path):
             lon, lat = rec['coords']
             geom = {'type': 'Point', 'coordinates': [lon, lat]}
         props = {k: v for k, v in rec.items() if k not in ('coords', 'slug', 'merge_registry')}
-        props.setdefault('category', 'energy_other' if 'ransmission' in (rec.get('type') or '')
-                         else 'mining' if rec.get('type') == 'Mining' else 'other')
+        # Hydro One Class EA records: type is Line / Station / Station/Line
+        ctype = rec.get('type') or ''
+        props.setdefault('category', 'mining' if ctype == 'Mining'
+                         else 'transmission' if re.search(r'line|station|transmission', ctype, re.I)
+                         else categorize(rec.get('name') or ''))
         add({'type': 'Feature', 'geometry': geom, 'properties': props})
         n_classea += 1
 print(f'ontario class EA (proponent-held): {n_classea}')

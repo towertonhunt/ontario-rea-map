@@ -41,7 +41,7 @@ leaf value; `category` is retained for map linkage.
 | oil_gas | `oilgas_lng_terminal` | marine + air + storage |
 | nuclear | `nuclear_generation` | reactor, thermal plume, radiological |
 | nuclear | `nuclear_waste` | DGR / storage, long-term stewardship |
-| energy_other | `energy_transmission` | HV lines & stations (linear ROW) |
+| transmission | `energy_transmission` | HV lines & stations (linear ROW) — own map category since 2026-09-06 |
 | energy_other | `energy_thermal_gas` | gas/thermal generating stations |
 | energy_other | `energy_storage_battery` | BESS, fire/hazmat focus |
 | transport | `transport_highway` | roads, interchanges |

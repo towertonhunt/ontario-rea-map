@@ -318,6 +318,14 @@ work; facts/quotes only in public repo).
   pin was 403 km off; rows are anchored to their own median). build_national_
   geojson re-pins any feature whose point is >2 km from the layout centroid
   (geocode='layout', geocode_original kept): 27 REA pins moved, Goshen 14 km.
+- CATEGORY 'transmission' (2026-09-06, user could not find Hydro One): was
+  folded into energy_other, and the 60 on_class_ea Line/Station records were
+  'other'. CATEGORY_RULES now has transmission (kV, substation, transformer
+  station, ligne de transport, poste, raccordement...) ahead of hydro; the
+  federal fallback classifies name BEFORE description (descriptions mention
+  the mine's transmission line); Class EA Line/Station -> transmission.
+  CATEGORY_META in index/search/project.html + pylon icon; sector filter is
+  built from the data so it appears automatically.
 - SOURCE 2 (network, lane fetch-footprints.yml weekly Sun + dispatch):
   scripts/build_footprints.py --source gis|cwtd|osm, staging in
   data/raw/footprints/<src>/, --merge-only recombines (REA > gis > cwtd > osm;
