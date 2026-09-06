@@ -29020,12 +29020,12 @@
       },
       "verdict": "weak",
       "overridden": false,
-      "score": 0.666,
+      "score": 0.719,
       "name_score": 0.466,
       "match": {
-        "id": null,
-        "name": "Almonte East",
-        "jurisdiction": "Ontario (Abandoned Mines)"
+        "id": 18,
+        "name": "Almonte Solar Farm",
+        "jurisdiction": "Ontario (REA)"
       }
     },
     {
