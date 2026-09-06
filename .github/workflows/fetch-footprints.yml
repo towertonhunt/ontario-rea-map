@@ -51,9 +51,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Optional projection support for shapefiles in other CRSs
+      - name: Tooling (pyproj for shapefile CRSs; poppler + tesseract for REA PDFs)
         continue-on-error: true
-        run: pip install --quiet pyproj
+        run: |
+          pip install --quiet pyproj pypdf
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr > /dev/null
+
+      - name: Fill the REA instrument corpus (approvals + amendments, OCR for image schedules)
+        continue-on-error: true
+        run: python3 -u scripts/fetch_rea_corpus.py --budget 2400 --refresh-missing
 
       - name: Document-derived layouts (offline)
         run: |
@@ -86,7 +92,7 @@ jobs:
             git reset -q --hard origin/main
             git stash pop -q || true
             git add data/footprints data/raw/footprints data/raw/map_docs_index.json \
-                    data/projects_canada.geojson data/gap_report.json data/api
+                    data/corpus/ontario data/projects_canada.geojson data/gap_report.json data/api
             git commit -m "Footprint harvest [skip ci]" || { echo "nothing to commit"; break; }
             git push && break
             sleep 7

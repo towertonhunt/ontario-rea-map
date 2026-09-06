@@ -307,6 +307,17 @@ work; facts/quotes only in public repo).
   drops rows >35 km from the pin. 105/222 corpus docs -> 61 projects, 1,775
   elements (550 turbines, 520 inverters, 277 transformers, 75 substations).
   Found > num_turbines = alternates the approval permits (noted, not an error).
+- CORPUS FILL (2026-09-06, user: Zephyr Brooke-Alvinston had no layout): only
+  222 of 555 Access Environment instrument PDFs were in the corpus; 124 of
+  135 layout-less REA projects simply had no text. scripts/fetch_rea_corpus.py
+  (lane step, needs poppler + tesseract on the runner) fetches approvals AND
+  amendments, pdftotext -layout, OCRs image pages (Armow / Grand Renewable
+  wind / Amherstburg schedules are scanned tables pypdf returns empty),
+  --refresh-missing re-does corpus docs that mention equipment coordinates
+  but hold no rows. Zone rule: a stated zone wins (Grey Highlands' registry
+  pin was 403 km off; rows are anchored to their own median). build_national_
+  geojson re-pins any feature whose point is >2 km from the layout centroid
+  (geocode='layout', geocode_original kept): 27 REA pins moved, Goshen 14 km.
 - SOURCE 2 (network, lane fetch-footprints.yml weekly Sun + dispatch):
   scripts/build_footprints.py --source gis|cwtd|osm, staging in
   data/raw/footprints/<src>/, --merge-only recombines (REA > gis > cwtd > osm;

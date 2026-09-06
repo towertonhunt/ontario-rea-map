@@ -851,9 +851,9 @@ if os.path.exists(gap_path):
 fp_index = os.path.join(ROOT, 'data', 'footprints', 'index.json')
 if os.path.exists(fp_index):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from footprints_common import make_id as _fp_make_id
+    from footprints_common import make_id as _fp_make_id, haversine_km as _fp_haversine
     fp_idx = json.load(open(fp_index))
-    n_fp = 0
+    n_fp = n_moved = 0
     for f in features:
         p = f['properties']
         e = fp_idx.get(_fp_make_id(p.get('jurisdiction'), p.get('name')))
@@ -868,8 +868,25 @@ if os.path.exists(fp_index):
         p['footprint_sources'] = e.get('sources')
         if e.get('confidence'):
             p['footprint_confidence'] = e['confidence']
+        # the approved equipment is where the project is: re-pin features
+        # whose registry point sits >2 km from the layout centroid (REA
+        # points were municipality-level; some were plain wrong)
+        c = e.get('centroid')
+        if c and f.get('geometry') and f['geometry'].get('type') == 'Point':
+            lon0, lat0 = f['geometry']['coordinates']
+            d = _fp_haversine(lat0, lon0, c[1], c[0])
+            if d > 2.0 and 41.5 < c[1] < 84 and -141.5 < c[0] < -52:
+                p['geocode_original'] = [round(lon0, 5), round(lat0, 5)]
+                p['geocode'] = 'layout'
+                p['pin_moved_km'] = round(d, 1)
+                f['geometry'] = {'type': 'Point', 'coordinates': [c[0], c[1]]}
+                n_moved += 1
+        elif c and not f.get('geometry'):
+            f['geometry'] = {'type': 'Point', 'coordinates': [c[0], c[1]]}
+            p['geocode'] = 'layout'
+            n_moved += 1
         n_fp += 1
-    print(f'footprints: {n_fp} features carry a layout ({len(fp_idx)} in index)')
+    print(f'footprints: {n_fp} features carry a layout ({len(fp_idx)} in index); {n_moved} pins moved onto the layout')
 
 json.dump({'type': 'FeatureCollection', 'features': features}, open(OUT, 'w'))
 n_geom = sum(1 for f in features if f.get('geometry'))

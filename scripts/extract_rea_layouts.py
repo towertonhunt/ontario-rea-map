@@ -207,22 +207,24 @@ def classify(ident, desc):
 
 
 def choose_zone(rows, text, pin):
+    """UTM zone for a document's rows. A zone stated in the text wins unless
+    it lands the rows far from the pin while another zone lands them close
+    (a mis-parsed zone); with no stated zone, the zone nearest the pin."""
     m = ZONE_RX.search(text)
     stated = int(m.group(1)) if m else None
     plat, plon = pin
-    best = None
-    for zone in ([stated] if stated else []) + [z for z in (15, 16, 17, 18) if z != stated]:
-        d = []
-        for _, _, e, n, _, _ in rows:
-            lat, lon = utm_to_latlon(e, n, zone)
-            d.append(haversine_km(lat, lon, plat, plon))
-        d.sort()
-        med = d[len(d) // 2]
-        if best is None or med < best[1]:
-            best = (zone, med)
-        if stated and zone == stated and med <= MAX_KM:
-            return zone, 'stated'
-    return best[0], ('stated' if stated == best[0] else 'inferred')
+
+    def median_dist(zone):
+        d = sorted(haversine_km(*utm_to_latlon(e, n, zone), plat, plon) for _, _, e, n, _, _ in rows)
+        return d[len(d) // 2]
+
+    dists = {z: median_dist(z) for z in (15, 16, 17, 18)}
+    nearest = min(dists, key=dists.get)
+    if stated:
+        if dists[stated] <= MAX_KM or dists[nearest] > MAX_KM:
+            return stated, 'stated'
+        return nearest, 'inferred'
+    return nearest, 'inferred'
 
 
 def main():
@@ -263,9 +265,18 @@ def main():
         for doc, rows, text, _ in items:
             zone, how = choose_zone(rows, text, (plat, plon))
             zones.add(zone)
-            for ident, level, e, n, desc, line_no in rows:
-                lat, lon = utm_to_latlon(e, n, zone)
-                if not in_canada(lat, lon) or haversine_km(lat, lon, plat, plon) > MAX_KM:
+            pts = [utm_to_latlon(e, n, zone) for _, _, e, n, _, _ in rows]
+            # anchor: the pin when the zone had to be inferred from it; when
+            # the document states the zone, the rows' own median -- a wrong
+            # registry pin (Grey Highlands sits 400 km off) must not veto them
+            if how == 'stated' and pts:
+                lats = sorted(x[0] for x in pts)
+                lons = sorted(x[1] for x in pts)
+                alat, alon = lats[len(lats) // 2], lons[len(lons) // 2]
+            else:
+                alat, alon = plat, plon
+            for (ident, level, e, n, desc, line_no), (lat, lon) in zip(rows, pts):
+                if not in_canada(lat, lon) or haversine_km(lat, lon, alat, alon) > MAX_KM:
                     dropped_far += 1
                     continue
                 role = classify(ident, desc)
@@ -299,7 +310,12 @@ def main():
                 if n_turb > exp * 1.3:
                     conf = 'medium'
         if dropped_far:
-            notes = (notes + '; ' if notes else '') + f'{dropped_far} rows dropped (>{MAX_KM:.0f} km from pin)'
+            notes = (notes + '; ' if notes else '') + f'{dropped_far} rows dropped (>{MAX_KM:.0f} km from the layout)'
+        clat = sum(x['geometry']['coordinates'][1] for x in features) / len(features)
+        clon = sum(x['geometry']['coordinates'][0] for x in features) / len(features)
+        pin_off = haversine_km(clat, clon, plat, plon)
+        if pin_off > 20:
+            notes = (notes + '; ' if notes else '') + f'registry pin was {pin_off:.0f} km from the approved equipment; map pin moved to the layout'
         entry = write_footprint(pid, features, {
             'name': p['name'], 'jurisdiction': p['jurisdiction'],
             'source_label': 'Ontario Renewable Energy Approval (equipment coordinates schedule)',
@@ -307,6 +323,7 @@ def main():
             'license': 'Open Government Licence – Ontario',
         })
         if entry:
+            entry['pin_offset_km'] = round(pin_off, 1)
             index[pid] = entry
             written += 1
             if verbose:

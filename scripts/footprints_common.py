@@ -325,10 +325,16 @@ def write_footprint(pid, features, meta):
     fc = {'type': 'FeatureCollection', 'features': feats,
           'properties': {'pid': pid, **{k: v for k, v in meta.items() if v not in (None, [], {})}}}
     json.dump(fc, open(footprint_path(pid), 'w'), ensure_ascii=False, separators=(',', ':'))
+    xs, ys = [], []
+    for f in feats:
+        for x, y in iter_coords(f['geometry']):
+            xs.append(x)
+            ys.append(y)
     entry = {
         'kind': geometry_kind(feats),
         'n': len(feats),
         'bbox': bbox_of(feats),
+        'centroid': [round(sum(xs) / len(xs), 6), round(sum(ys) / len(ys), 6)] if xs else None,
         'roles': summarize(feats),
         'sources': sorted({f['properties'].get('source') for f in feats if f['properties'].get('source')}),
     }
