@@ -155,8 +155,17 @@ def detour():
                        'after the federal Minister declined to designate it in 2017.',
         'coords': DETOUR_COORDS,
         # the federal registry record for the same mine is folded into this point
-        'merge_registry': [{'source': 'federal_iaac', 'project': '10-03-52262',
-                            'section': 'Federal registry (CEAR 10-03-52262)'}],
+        # registry records for the same mine are folded into this one point
+        'merge_registry': [
+            {'source': 'federal_iaac', 'project': '10-03-52262',
+             'section': 'Federal registry (CEAR 10-03-52262)'},
+            {'source': 'on_provincial_ea', 'project': 'detour-lake-power-project',
+             'section': '2010 Detour Lake Power Project EA (ontario.ca record)'},
+            {'source': 'on_provincial_ea', 'project': 'detour-lake-contingency-power-project',
+             'section': '2012 Detour Lake Contingency Power Project EA (ontario.ca record)'},
+            {'source': 'on_provincial_ea', 'project': 'detour-lake-mine-long-term-waste-management-strategy',
+             'section': '2024 Long-term Waste Management Strategy EA (ontario.ca record)'},
+        ],
         'docs': docs,
     }]
 

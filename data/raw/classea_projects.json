@@ -1066,6 +1066,21 @@
     "source": "federal_iaac",
     "project": "10-03-52262",
     "section": "Federal registry (CEAR 10-03-52262)"
+   },
+   {
+    "source": "on_provincial_ea",
+    "project": "detour-lake-power-project",
+    "section": "2010 Detour Lake Power Project EA (ontario.ca record)"
+   },
+   {
+    "source": "on_provincial_ea",
+    "project": "detour-lake-contingency-power-project",
+    "section": "2012 Detour Lake Contingency Power Project EA (ontario.ca record)"
+   },
+   {
+    "source": "on_provincial_ea",
+    "project": "detour-lake-mine-long-term-waste-management-strategy",
+    "section": "2024 Long-term Waste Management Strategy EA (ontario.ca record)"
    }
   ],
   "doc_count": 12,
